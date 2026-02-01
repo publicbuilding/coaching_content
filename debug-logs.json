@@ -57,7 +57,7 @@
   },
   {
     "type": "log",
-    "text": "[ProRenderer] UI Camera: {cameraX: 960, cameraY: 720, cameraZoom: 1}"
+    "text": "[ProRenderer] UI Camera: {cameraX: 160, cameraY: 560, cameraZoom: 1}"
   },
   {
     "type": "log",
