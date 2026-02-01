@@ -1,0 +1,114 @@
+[
+  {
+    "type": "debug",
+    "text": "[vite] connecting..."
+  },
+  {
+    "type": "debug",
+    "text": "[vite] connected."
+  },
+  {
+    "type": "log",
+    "text": "[SoundManager] Initialized"
+  },
+  {
+    "type": "log",
+    "text": "[SoundManager] Master Volume: 0.5"
+  },
+  {
+    "type": "log",
+    "text": "[SoundManager] Effects Volume: 0.7"
+  },
+  {
+    "type": "log",
+    "text": "[SoundManager] Music Volume: 0.5"
+  },
+  {
+    "type": "log",
+    "text": "[Notification] IMPORTANT: 🏠 BUILD A HOUSE FIRST! Start your settlement by building a house to grow your population."
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Render START - Frame 1"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Canvas size: 1280 x 720"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Game state buildings: 2"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Game state map dimensions: 30 x 40"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Day time: 0.500017"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Background color: rgba(179.99591999999998, 159.99455999999998, 30.002720000000007, 1)"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Ambient light: {r: 179.99591999999998, g: 159.99455999999998, b: 30.002720000000007, intensity: 0.9999863999999999}"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] UI Camera: {cameraX: 960, cameraY: 720, cameraZoom: 1}"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] PostProcess Camera: {x: 0, y: 0, zoom: 1}"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Canvas center: 640 360"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderMap] Called - Map dimensions: 40 x 30"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderMap] First tile: plains visible: false"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderTile] First tile - type: plains pos: {screenX: 0, screenY: 0} color: #d4a574 visible: false"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderMap] Done - rendered 1200 tiles"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderBuildings] Called - Building count: 2"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderBuildings] First building: house at 18 15"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderBuilding] First building: {type: house, gridPos: (18, 15), screenPosX: 96, screenPosY: 528, paletteColor: #8b6f47}"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderBuildings] Done - rendered 2 buildings"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer.renderBuildingPalette] Called - palette at y: 620 height: 100"
+  },
+  {
+    "type": "log",
+    "text": "[ProRenderer] Render COMPLETE - Frame 1"
+  },
+  {
+    "type": "log",
+    "text": "[Notification] INFO: 💡 Step 1: Click \"house\" in the left panel to select it"
+  }
+]
