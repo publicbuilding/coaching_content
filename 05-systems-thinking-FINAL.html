@@ -21,7 +21,7 @@
 
         @page {
             size: A4;
-            margin: 3in 1.5in 3in 1.5in;
+            margin: 4in 2in 4in 2in;
 
             @top-left {
                 content: "Executive Forge | Premium Module";
@@ -146,7 +146,7 @@
             color: white;
             background-color: #1B3A6B;
             margin: 1.5in 0 0.4in 0;
-            padding: 0.4in 1.5in;
+            padding: 0.4in 0;
             line-height: 1.3;
             page-break-after: avoid;
             border: none;
@@ -162,11 +162,13 @@
             color: white;
             background-color: #1B3A6B;
             margin: 1.2in 0 0.4in 0;
-            padding: 0.35in 1.5in;
+            padding: 0.35in 0;
             line-height: 1.3;
             page-break-after: avoid;
             page-break-before: always;
             border-left: 5px solid #D4A574;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         h2:first-of-type {
@@ -179,7 +181,7 @@
             color: #1B3A6B;
             background-color: rgba(212, 165, 116, 0.15);
             margin: 0.5in 0 0.2in 0;
-            padding: 0.2in 1.5in;
+            padding: 0.2in 0;
             line-height: 1.3;
             page-break-after: avoid;
             border-left: 4px solid #D4A574;
@@ -190,7 +192,7 @@
             font-weight: 700;
             color: #1B3A6B;
             margin: 0.4in 0 0.2in 0;
-            padding: 0 1.5in;
+            padding: 0;
             page-break-after: avoid;
         }
 
@@ -202,7 +204,7 @@
             color: #2C3E50;
             orphans: 2;
             widows: 2;
-            padding: 0 1.5in;
+            padding: 0;
         }
 
         p strong {
@@ -218,7 +220,7 @@
 
         /* LISTS */
         ul, ol {
-            margin: 0.2in 0 0.3in 2in;
+            margin: 0.2in 0 0.3in 1.5in;
             padding-left: 0.2in;
         }
 
@@ -280,9 +282,9 @@
 
         /* TABLES */
         table {
-            width: calc(100% - 3in);
+            width: 100%;
             border-collapse: collapse;
-            margin: 0.4in 1.5in;
+            margin: 0.4in 0;
             page-break-inside: avoid;
             font-size: 10pt;
             line-height: 1.5;
@@ -320,7 +322,7 @@
         /* BLOCKQUOTES */
         blockquote {
             border-left: 5px solid #D4A574;
-            padding: 0.3in 1.5in;
+            padding: 0.3in;
             margin: 0.4in 0;
             background-color: #FFF9F0;
             font-style: italic;
@@ -334,7 +336,7 @@
             background-color: #FFF9F0;
             border-left: 5px solid #D4A574;
             border-right: 3px solid #1B3A6B;
-            padding: 0.3in 1.5in;
+            padding: 0.3in;
             margin: 0.4in 0;
             page-break-inside: avoid;
             font-weight: 500;
@@ -344,7 +346,7 @@
             background-color: #F8F9FA;
             border: 2px solid #1B3A6B;
             border-left: 5px solid #D4A574;
-            padding: 0.35in 1.5in;
+            padding: 0.35in;
             margin: 0.4in 0;
             page-break-inside: avoid;
         }
@@ -360,7 +362,7 @@
             background-color: #F8F9FA;
             border: 2px solid #1B3A6B;
             border-left: 5px solid #D4A574;
-            padding: 0.35in 1.5in;
+            padding: 0.35in;
             margin: 0.4in 0;
             page-break-inside: avoid;
         }
@@ -381,7 +383,7 @@
         .timeline {
             background-color: #F8F9FA;
             border-left: 5px solid #1B3A6B;
-            padding: 0.3in 1.5in;
+            padding: 0.3in;
             margin: 0.4in 0;
             page-break-inside: avoid;
         }
@@ -489,7 +491,7 @@
 
         /* ORG CHART */
         .org-chart {
-            padding: 0.35in 1.5in;
+            padding: 0.35in;
             background-color: #F8F9FA;
             border: 2px solid #1B3A6B;
             border-left: 5px solid #D4A574;
@@ -541,7 +543,7 @@
             background-color: #F8F9FA;
             border: 2px solid #1B3A6B;
             border-left: 5px solid #D4A574;
-            padding: 0.35in 1.5in;
+            padding: 0.35in;
             border-radius: 0;
             overflow-x: auto;
             margin: 0.4in 0;
@@ -886,28 +888,28 @@
         <p class="highlight"><strong>Priority:</strong> Focus on high-leverage changes. Avoid low-leverage initiatives that consume time without moving the needle.</p>
 
         <div class="leverage-container">
-            <div style="text-align: center; padding: 0 1.5in; margin: 0.4in 0;">
+            <div style="text-align: center; margin: 0.4in 0;">
                 <strong style="color: #1B3A6B; font-size: 12pt; display: block; margin-bottom: 0.3in;">Leverage Quadrant</strong>
                 
-                <div style="display: flex; width: calc(100% - 3in); margin: 0 1.5in; page-break-inside: avoid;">
+                <div style="display: flex; width: 100%; page-break-inside: avoid;">
                     <div style="width: 20%;"></div>
                     <div style="width: 40%; text-align: center; font-weight: 700; color: #1B3A6B; font-size: 10pt; padding: 0.1in;">Low Effort</div>
                     <div style="width: 40%; text-align: center; font-weight: 700; color: #1B3A6B; font-size: 10pt; padding: 0.1in;">High Effort</div>
                 </div>
 
-                <div style="display: flex; width: calc(100% - 3in); margin: 0 1.5in; page-break-inside: avoid;">
+                <div style="display: flex; width: 100%; page-break-inside: avoid;">
                     <div style="width: 20%; text-align: right; font-weight: 700; color: #1B3A6B; font-size: 10pt; padding-right: 0.2in; padding-top: 0.4in;">High Impact</div>
                     <div style="width: 40%; background-color: #E8F5E9; border: 2px solid #1B3A6B; padding: 0.3in; text-align: center; font-weight: 700; font-size: 10pt; color: #1B3A6B;">DO NOW<br/><span style="font-size: 9pt; font-weight: 500;">Highest Priority</span></div>
                     <div style="width: 40%; background-color: #FFF3CD; border: 2px solid #1B3A6B; border-left: none; padding: 0.3in; text-align: center; font-weight: 700; font-size: 10pt; color: #856404;">PLAN LATER<br/><span style="font-size: 9pt; font-weight: 500;">Medium Priority</span></div>
                 </div>
 
-                <div style="display: flex; width: calc(100% - 3in); margin: 0 1.5in; page-break-inside: avoid;">
+                <div style="display: flex; width: 100%; page-break-inside: avoid;">
                     <div style="width: 20%; text-align: right; font-weight: 700; color: #1B3A6B; font-size: 10pt; padding-right: 0.2in; padding-top: 0.4in;">Low Impact</div>
                     <div style="width: 40%; background-color: #F8F9FA; border: 2px solid #1B3A6B; border-top: none; padding: 0.3in; text-align: center; font-weight: 700; font-size: 10pt; color: #666;">SKIP<br/><span style="font-size: 9pt; font-weight: 500;">Low Priority</span></div>
                     <div style="width: 40%; background-color: #FFEBEE; border: 2px solid #1B3A6B; border-left: none; border-top: none; padding: 0.3in; text-align: center; font-weight: 700; font-size: 10pt; color: #C62828;">AVOID<br/><span style="font-size: 9pt; font-weight: 500;">Lowest Priority</span></div>
                 </div>
 
-                <p style="font-size: 9pt; color: #999; margin-top: 0.2in; padding: 0 0.75in;"><em>Score each change on Impact (1-10) and Effort (1-10), then place in appropriate quadrant</em></p>
+                <p style="font-size: 9pt; color: #999; margin-top: 0.2in;"><em>Score each change on Impact (1-10) and Effort (1-10), then place in appropriate quadrant</em></p>
             </div>
         </div>
 
