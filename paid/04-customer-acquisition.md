@@ -556,6 +556,146 @@ This is sustainable and scalable. Each dollar of acquisition generates almost $1
 
 ---
 
+## Anti-Patterns in Acquisition
+
+### Anti-Pattern 1: Vanity Metrics Over Unit Economics
+
+**The trap:** "We're getting 1,000 leads/month!" (without measuring CAC or conversion)
+
+Leads mean nothing. Customers mean everything.
+
+Example:
+- Company A: 1,000 leads/month, 5% conversion = 50 customers, CAC $2,000
+- Company B: 100 leads/month, 50% conversion = 50 customers, CAC $200
+
+Both get 50 customers. Company B is 10x more efficient.
+
+**The fix:** Track CAC and LTV for every channel, not just volume metrics.
+
+### Anti-Pattern 2: Channel Loyalty
+
+**The trap:** "We've always done email marketing, so let's do more email."
+
+People get attached to channels. But markets change. What worked in 2019 might not work in 2024.
+
+Example:
+- Cold email CAC in 2018: $200
+- Cold email CAC in 2024: $2,000 (everyone's doing it, response rates collapsed)
+- But nobody adjusted strategy
+
+**The fix:** Test new channels continuously. Measure performance. Shift budget to what works.
+
+### Anti-Pattern 3: Ignoring Payback Period
+
+**The trap:** "Our CAC:LTV is 1:5, so we're good." (But payback is 18 months)
+
+You might be profitable eventually, but you'll run out of cash scaling.
+
+Example:
+- CAC: $5,000
+- LTV: $25,000
+- Ratio: 1:5 (looks great!)
+- But monthly revenue: $500 (18-month payback)
+
+You can't scale this without capital because you're paying CAC upfront, getting revenue over 18 months.
+
+**The fix:** Payback period must be <6 months. Ideally <3 months.
+
+### Anti-Pattern 4: Product-Market Fit Before Acquisition Strategy
+
+**The trap:** "Once we have product-market fit, acquisition will be easy."
+
+Not true. Product-market fit means customers want your product. It doesn't mean you have a scalable, efficient acquisition strategy.
+
+Example:
+- Slack had product-market fit (strong retention, word-of-mouth)
+- But they still had to build sales and marketing to scale beyond initial users
+
+**The fix:** Develop product-market fit AND acquisition strategy in parallel.
+
+---
+
+## Advanced Topics
+
+### Market Sizing and TAM
+
+Before investing heavily in a channel, understand your total addressable market (TAM).
+
+**TAM Calculation:**
+1. **Bottom-up:** How many customers could realistically want your product?
+   - Example: HR SaaS targeting companies with 100-5,000 employees
+   - US companies in that range: ~200,000
+   - Serviceable market (realistic addressable): 50,000
+   - Serviceable obtainable market (what you can actually get): 5,000
+
+2. **Top-down:** What's the market value? Divide by average contract value.
+   - Total market spend on HR software: $50B
+   - Your estimated share: 1% = $500M
+   - At $10K ACV: 50,000 customers
+
+TAM matters because it tells you:
+- How big can your company get?
+- When do you saturate the market?
+- Is continued growth possible?
+
+Example: A B2B SaaS with $500K TAM can't become a billion-dollar company, even with perfect execution.
+
+### Viral Loops and Network Effects
+
+Some products grow exponentially through viral mechanisms.
+
+**Types of viral loops:**
+1. **Passive viral** (you use product, people see it)
+   - Slack: You use it, colleagues get invited
+   - Figma: You share designs, people click links
+
+2. **Active viral** (you deliberately invite others)
+   - Dropbox: You invite friends for storage bonus
+   - PayPal: You send money to friends, they open account
+
+3. **Network effects** (product gets better as it grows)
+   - LinkedIn: More users = more valuable network
+   - Zoom: More contacts = more useful video calling
+
+If your product has viral properties:
+- CAC can be very low ($10-100)
+- Payback can be weeks
+- Growth can be exponential
+
+If your product doesn't have viral properties:
+- You need paid acquisition or sales
+- CAC will be higher
+- Growth will be linear
+
+---
+
+### Cohort Analysis
+
+Understanding how customer cohorts behave helps you optimize acquisition.
+
+Cohort analysis breaks down customers by when they were acquired and tracks their behavior:
+
+```
+Cohort    | Jan | Feb | Mar | Apr | May | Churn | LTV
+----------|-----|-----|-----|-----|-----|-------|-----
+Jan 2024  | 100 |  95 |  87 |  79 |  72 |  28%  | $2,800
+Feb 2024  |     | 120 | 108 |  97 |  87 |  28%  | $3,400
+Mar 2024  |     |     | 150 | 135 | 122 |  19%  | $4,100
+Apr 2024  |     |     |     | 180 | 162 |  10%  | $5,100
+```
+
+What this shows:
+- Jan cohort: Stable churn (28%), steady LTV
+- Mar/Apr cohorts: Lower churn (10-19%), higher LTV
+- Why? Product improved? Onboarding better? Different customer type?
+
+Use this to inform:
+- Which cohorts are most valuable?
+- What changed between Jan and Apr?
+- Which acquisition channels bring better-retaining customers?
+
+---
+
 ## Templates and Implementation {#implementation}
 
 ### Template: Unit Economics Calculator
