@@ -1,0 +1,57 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hammerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8C77F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C89F52;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle (larger) -->
+  <circle cx="200" cy="200" r="190" fill="#1B3A6B" stroke="#D4A574" stroke-width="4"/>
+  
+  <!-- Inner accent circle -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Ornate Hammer -->
+  <g transform="translate(200, 140)">
+    <!-- Hammer head - larger and more detailed -->
+    <rect x="-45" y="-50" width="90" height="45" fill="url(#hammerGradient)" rx="5" filter="url(#shadow)"/>
+    
+    <!-- Hammer head top detail (darker line) -->
+    <rect x="-45" y="-50" width="90" height="4" fill="#A67C3F" rx="5"/>
+    
+    <!-- Hammer head metallic shine -->
+    <rect x="-40" y="-45" width="80" height="8" fill="#F5E6C8" opacity="0.4" rx="4"/>
+    
+    <!-- Hammer face details (horizontal lines) -->
+    <line x1="-42" y1="-35" x2="42" y2="-35" stroke="#A67C3F" stroke-width="2" opacity="0.4"/>
+    <line x1="-42" y1="-25" x2="42" y2="-25" stroke="#A67C3F" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Hammer handle - wood grain effect -->
+    <rect x="-12" y="-5" width="24" height="70" fill="#D4A574" rx="10" filter="url(#shadow)"/>
+    
+    <!-- Handle wood grain lines -->
+    <line x1="-8" y1="10" x2="8" y2="10" stroke="#A67C3F" stroke-width="1.5" opacity="0.3"/>
+    <line x1="-8" y1="25" x2="8" y2="25" stroke="#A67C3F" stroke-width="1.5" opacity="0.3"/>
+    <line x1="-8" y1="40" x2="8" y2="40" stroke="#A67C3F" stroke-width="1.5" opacity="0.3"/>
+    <line x1="-8" y1="55" x2="8" y2="55" stroke="#A67C3F" stroke-width="1.5" opacity="0.3"/>
+    
+    <!-- Handle grip accent (lighter wrap) -->
+    <ellipse cx="0" cy="35" rx="10" ry="12" fill="#FFF9F0" opacity="0.5"/>
+    <ellipse cx="0" cy="35" rx="10" ry="3" fill="#FFF9F0" opacity="0.3"/>
+    
+    <!-- Handle end grip -->
+    <circle cx="0" cy="68" r="8" fill="#A67C3F"/>
+    <circle cx="0" cy="68" r="6" fill="#D4A574"/>
+  </g>
+  
+  <!-- Text inside circle -->
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#D4A574" letter-spacing="2">EXECUTIVE</text>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#D4A574" letter-spacing="2">FORGE</text>
+  
+  <!-- Tagline inside circle -->
+  <text x="200" y="320" font-family="Georgia, serif" font-size="13" text-anchor="middle" fill="#D4A574" opacity="0.9" font-style="italic">Where Leaders Are Made</text>
+</svg>
