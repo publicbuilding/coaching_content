@@ -3,10 +3,39 @@
 
 ---
 
+## ⚠️ DISCLAIMER TO ADD TO ALL PRODUCT PAGES
+
+**Add this at the top of EVERY product description:**
+
+```
+⚠️ IMPORTANT DISCLAIMER
+
+This content is for educational purposes only. 
+
+It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+```
+
+---
+
 ## PRODUCT #1: Executive Financial Analysis
 
 ### PAGE TITLE
 Understand Financial Statements Like a CEO (Even If You Hate Numbers)
+
+### DISCLAIMER
+⚠️ IMPORTANT DISCLAIMER
+
+This content is for educational purposes only. It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+
+---
 
 ### DESCRIPTION / MAIN COPY
 
@@ -86,6 +115,18 @@ After this module, you'll:
 
 ### PAGE TITLE
 Hire People Who Actually Perform (And Keep Them)
+
+
+### DISCLAIMER
+⚠️ IMPORTANT DISCLAIMER
+
+This content is for educational purposes only. It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+
+---
 
 ### DESCRIPTION / MAIN COPY
 
@@ -171,6 +212,18 @@ After this module, you'll:
 ### PAGE TITLE
 Scale Your Business Without Everything Breaking (The Systems Blueprint)
 
+
+### DISCLAIMER
+⚠️ IMPORTANT DISCLAIMER
+
+This content is for educational purposes only. It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+
+---
+
 ### DESCRIPTION / MAIN COPY
 
 **You're hitting a wall.**
@@ -253,6 +306,18 @@ After this module, you'll:
 ### PAGE TITLE
 Turn Cold Leads Into Customers (The Playbook That Works at Any Stage)
 
+
+### DISCLAIMER
+⚠️ IMPORTANT DISCLAIMER
+
+This content is for educational purposes only. It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+
+---
+
 ### DESCRIPTION / MAIN COPY
 
 **Sales are broken. But you don't know why.**
@@ -334,6 +399,18 @@ After this module, you'll:
 
 ### PAGE TITLE
 Your First 90 Days as a Leader (Don't Screw This Up—It's Your Only Chance to Make a First Impression)
+
+
+### DISCLAIMER
+⚠️ IMPORTANT DISCLAIMER
+
+This content is for educational purposes only. It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+
+---
 
 ### DESCRIPTION / MAIN COPY
 

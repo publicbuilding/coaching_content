@@ -1,6 +1,18 @@
 # Sales Copy Guide
 ## Benefit-Focused Headlines, Bullets, and FAQs
 
+⚠️ **DISCLAIMER TO INCLUDE IN ALL PRODUCT PAGES:**
+
+```
+This content is for educational purposes only. It is NOT financial advice, investment advice, or a recommendation to buy or sell any security. It is NOT personalized guidance for your situation.
+
+Always consult with a qualified financial advisor, lawyer, or tax professional before making financial, investment, or legal decisions.
+
+We are not registered investment advisors or financial planners.
+```
+
+---
+
 This document contains all the sales copy frameworks used across the 5 products. Use this as a reference for understanding the copy strategy.
 
 ---

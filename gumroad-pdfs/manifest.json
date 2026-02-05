@@ -1,0 +1,175 @@
+{
+  "project": "Executive Forge",
+  "generated": "2026-02-04T11:32:20.296195",
+  "total_modules": 22,
+  "modules": [
+    {
+      "source": "01-financial-modeling.md",
+      "title": "Financial Modeling for Projections: Building 5-Year Forecasts",
+      "html_file": "01-financial-modeling-for-projections-building-5-year-forecasts.html",
+      "pdf_file": "01-financial-modeling-for-projections-building-5-year-forecasts.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "01-managerial-accounting.md",
+      "title": "Managerial Accounting for Strategic Decision-Making",
+      "html_file": "02-managerial-accounting-for-strategic-decision-making.html",
+      "pdf_file": "02-managerial-accounting-for-strategic-decision-making.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "02-cost-accounting.md",
+      "title": "Cost Accounting Deep Dive: Activity-Based Costing for Profitability",
+      "html_file": "03-cost-accounting-deep-dive-activity-based-costing-for-profitability.html",
+      "pdf_file": "03-cost-accounting-deep-dive-activity-based-costing-for-profitability.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "02-high-performance-teams.md",
+      "title": "Building High-Performance Teams: Hiring, Firing, and Culture Architecture",
+      "html_file": "04-building-high-performance-teams-hiring-firing-and-culture-architecture.html",
+      "pdf_file": "04-building-high-performance-teams-hiring-firing-and-culture-architecture.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "03-systems-thinking.md",
+      "title": "Systems Thinking for Operators: Scaling Without Breaking",
+      "html_file": "05-systems-thinking-for-operators-scaling-without-breaking.html",
+      "pdf_file": "05-systems-thinking-for-operators-scaling-without-breaking.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "03-team-dynamics.md",
+      "title": "Team Dynamics: Conflict Resolution and High-Performance Culture",
+      "html_file": "06-team-dynamics-conflict-resolution-and-high-performance-culture.html",
+      "pdf_file": "06-team-dynamics-conflict-resolution-and-high-performance-culture.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "04-customer-acquisition.md",
+      "title": "Customer Acquisition Mastery: Channels, CAC, and Compounding Growth",
+      "html_file": "07-customer-acquisition-mastery-channels-cac-and-compounding-growth.html",
+      "pdf_file": "07-customer-acquisition-mastery-channels-cac-and-compounding-growth.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "04-hiring-excellence.md",
+      "title": "Hiring Excellence: Building Bench Strength and Succession Planning",
+      "html_file": "08-hiring-excellence-building-bench-strength-and-succession-planning.html",
+      "pdf_file": "08-hiring-excellence-building-bench-strength-and-succession-planning.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "05-process-automation.md",
+      "title": "Process Automation: Scaling Without People",
+      "html_file": "09-process-automation-scaling-without-people.html",
+      "pdf_file": "09-process-automation-scaling-without-people.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "06-supply-chain-strategy.md",
+      "title": "Supply Chain Strategy: Sourcing, Negotiation, Risk Management",
+      "html_file": "10-supply-chain-strategy-sourcing-negotiation-risk-management.html",
+      "pdf_file": "10-supply-chain-strategy-sourcing-negotiation-risk-management.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "07-pricing-psychology.md",
+      "title": "Pricing Psychology: Using Data + Psychology to Maximize Revenue",
+      "html_file": "11-pricing-psychology-using-data-psychology-to-maximize-revenue.html",
+      "pdf_file": "11-pricing-psychology-using-data-psychology-to-maximize-revenue.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "08-brand-strategy.md",
+      "title": "Brand Strategy: Building Defensible Market Positioning",
+      "html_file": "12-brand-strategy-building-defensible-market-positioning.html",
+      "pdf_file": "12-brand-strategy-building-defensible-market-positioning.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "09-content-marketing.md",
+      "title": "Content Marketing at Scale: Building Authority and Audience",
+      "html_file": "13-content-marketing-at-scale-building-authority-and-audience.html",
+      "pdf_file": "13-content-marketing-at-scale-building-authority-and-audience.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "10-customer-retention.md",
+      "title": "Customer Retention: Reducing Churn and Maximizing Lifetime Value",
+      "html_file": "14-customer-retention-reducing-churn-and-maximizing-lifetime-value.html",
+      "pdf_file": "14-customer-retention-reducing-churn-and-maximizing-lifetime-value.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "11-organizational-behavior.md",
+      "title": "Organizational Behavior: Motivation, Incentives, and Culture Design",
+      "html_file": "15-organizational-behavior-motivation-incentives-and-culture-design.html",
+      "pdf_file": "15-organizational-behavior-motivation-incentives-and-culture-design.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "12-capital-allocation.md",
+      "title": "Capital Allocation: ROI Frameworks and Investment Decisions",
+      "html_file": "16-capital-allocation-roi-frameworks-and-investment-decisions.html",
+      "pdf_file": "16-capital-allocation-roi-frameworks-and-investment-decisions.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "13-market-entry-strategy.md",
+      "title": "Market Entry Strategy: Competitive Analysis and Go-To-Market Planning",
+      "html_file": "17-market-entry-strategy-competitive-analysis-and-go-to-market-planning.html",
+      "pdf_file": "17-market-entry-strategy-competitive-analysis-and-go-to-market-planning.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "14-executive-communication.md",
+      "title": "Executive Communication: Storytelling, Presentations, and Persuasion",
+      "html_file": "18-executive-communication-storytelling-presentations-and-persuasion.html",
+      "pdf_file": "18-executive-communication-storytelling-presentations-and-persuasion.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "15-change-management.md",
+      "title": "Change Management: Leading Transformation Without Losing People",
+      "html_file": "19-change-management-leading-transformation-without-losing-people.html",
+      "pdf_file": "19-change-management-leading-transformation-without-losing-people.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "16-product-strategy.md",
+      "title": "Product Strategy: From Concept to Market Leadership",
+      "html_file": "20-product-strategy-from-concept-to-market-leadership.html",
+      "pdf_file": "20-product-strategy-from-concept-to-market-leadership.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "module-1-executive-financial-analysis.md",
+      "title": "Module 1: Executive Financial Analysis",
+      "html_file": "21-module-1-executive-financial-analysis.html",
+      "pdf_file": "21-module-1-executive-financial-analysis.pdf",
+      "status": "converted"
+    },
+    {
+      "source": "module-2-crafting-strategy.md",
+      "title": "Module 2: Crafting Unassailable Strategy",
+      "html_file": "22-module-2-crafting-unassailable-strategy.html",
+      "pdf_file": "22-module-2-crafting-unassailable-strategy.pdf",
+      "status": "converted"
+    }
+  ],
+  "output_directory": "/data/workspace/gumroad-pdfs",
+  "html_temp_directory": "/data/workspace/gumroad-pdfs/html-temp",
+  "brand_colors": {
+    "primary": "#1B3A6B",
+    "accent": "#D4A574",
+    "text": "#2C3E50",
+    "light_bg": "#F8F9FA",
+    "border": "#E0E6ED"
+  },
+  "brand_fonts": {
+    "headings": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "body": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "code": "\"IBM Plex Mono\", \"Courier New\", monospace"
+  }
+}
