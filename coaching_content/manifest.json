@@ -1,0 +1,373 @@
+{
+  "repository": {
+    "name": "Executive Coaching Content",
+    "description": "Professional course content repository with 22 comprehensive modules",
+    "version": "2.0",
+    "lastUpdated": "2026-02-05",
+    "status": "Production Ready",
+    "owner": "Executive Coaching Team"
+  },
+  "structure": {
+    "modules": "Core course content (22 modules)",
+    "templates": "Master templates and styling",
+    "automation": "Scripts and automation tools",
+    "resources": "Shared assets and templates",
+    "research": "Market research and strategy",
+    "launch": "Launch materials and checklists",
+    "archived": "Previous versions and artifacts"
+  },
+  "modules": [
+    {
+      "id": "01",
+      "slug": "01-financial-modeling",
+      "title": "Financial Modeling for Projections",
+      "description": "Building 5-year financial forecasts and understanding business projections",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "60.4 MB"
+    },
+    {
+      "id": "02",
+      "slug": "02-managerial-accounting",
+      "title": "Managerial Accounting for Strategic Decision-Making",
+      "description": "Using accounting data for strategic business decisions",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "80.6 MB"
+    },
+    {
+      "id": "03",
+      "slug": "03-cost-accounting",
+      "title": "Cost Accounting Deep Dive",
+      "description": "Activity-based costing for profitability analysis",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "58.6 MB"
+    },
+    {
+      "id": "04",
+      "slug": "04-high-performance-teams",
+      "title": "Building High-Performance Teams",
+      "description": "Hiring, firing, and culture architecture fundamentals",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "106.7 MB"
+    },
+    {
+      "id": "05",
+      "slug": "05-systems-thinking",
+      "title": "Systems Thinking for Operators",
+      "description": "Scaling without breaking - organizational systems design",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "81.6 MB"
+    },
+    {
+      "id": "06",
+      "slug": "06-team-dynamics",
+      "title": "Team Dynamics",
+      "description": "Conflict resolution and high-performance culture",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "60.2 MB"
+    },
+    {
+      "id": "07",
+      "slug": "07-customer-acquisition",
+      "title": "Customer Acquisition Mastery",
+      "description": "Channels, CAC, and compounding growth strategies",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "81.3 MB"
+    },
+    {
+      "id": "08",
+      "slug": "08-hiring-excellence",
+      "title": "Hiring Excellence",
+      "description": "Building bench strength and succession planning",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "52.1 MB"
+    },
+    {
+      "id": "09",
+      "slug": "09-process-automation",
+      "title": "Process Automation & Scaling",
+      "description": "Scaling without people through automation",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "56.4 MB"
+    },
+    {
+      "id": "10",
+      "slug": "10-supply-chain-strategy",
+      "title": "Supply Chain Strategy",
+      "description": "Sourcing, negotiation, and risk management",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "56.5 MB"
+    },
+    {
+      "id": "11",
+      "slug": "11-pricing-psychology",
+      "title": "Pricing Psychology",
+      "description": "Using data and psychology to maximize revenue",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "51.2 MB"
+    },
+    {
+      "id": "12",
+      "slug": "12-brand-strategy",
+      "title": "Brand Strategy",
+      "description": "Building defensible market positioning",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "54.9 MB"
+    },
+    {
+      "id": "13",
+      "slug": "13-content-marketing",
+      "title": "Content Marketing at Scale",
+      "description": "Building authority and audience",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "55.7 MB"
+    },
+    {
+      "id": "14",
+      "slug": "14-customer-retention",
+      "title": "Customer Retention",
+      "description": "Reducing churn and maximizing lifetime value",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "54.4 MB"
+    },
+    {
+      "id": "15",
+      "slug": "15-organizational-behavior",
+      "title": "Organizational Behavior",
+      "description": "Motivation, incentives, and culture design",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "52.8 MB"
+    },
+    {
+      "id": "16",
+      "slug": "16-capital-allocation",
+      "title": "Capital Allocation",
+      "description": "ROI frameworks and investment decisions",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "50.7 MB"
+    },
+    {
+      "id": "17",
+      "slug": "17-market-entry-strategy",
+      "title": "Market Entry Strategy",
+      "description": "Competitive analysis and go-to-market planning",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "52.2 MB"
+    },
+    {
+      "id": "18",
+      "slug": "18-executive-communication",
+      "title": "Executive Communication",
+      "description": "Storytelling, presentations, and persuasion",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "51.9 MB"
+    },
+    {
+      "id": "19",
+      "slug": "19-change-management",
+      "title": "Change Management",
+      "description": "Leading transformation without losing people",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "50.8 MB"
+    },
+    {
+      "id": "20",
+      "slug": "20-product-strategy",
+      "title": "Product Strategy",
+      "description": "From concept to market leadership",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "47.5 MB"
+    },
+    {
+      "id": "21",
+      "slug": "21-executive-financial-analysis",
+      "title": "Executive Financial Analysis",
+      "description": "Comprehensive financial analysis techniques",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "155.0 MB"
+    },
+    {
+      "id": "22",
+      "slug": "22-crafting-strategy",
+      "title": "Crafting Unassailable Strategy",
+      "description": "Building and executing strategy",
+      "status": "Published",
+      "contentAvailable": {
+        "pdf": true,
+        "markdown": false,
+        "html": false
+      },
+      "lastUpdated": "2026-02-05",
+      "fileSize": "140.7 MB"
+    }
+  ],
+  "statistics": {
+    "totalModules": 22,
+    "publishedModules": 22,
+    "draftModules": 0,
+    "totalFileSize": "1.52 GB",
+    "archivedVersions": 7,
+    "automationScripts": 5,
+    "launchDocuments": 8,
+    "researchDocuments": 6
+  },
+  "contentTypes": {
+    "pdf": 22,
+    "markdown": 0,
+    "html": 0,
+    "archived": 7
+  },
+  "qualityMetrics": {
+    "allModulesComplete": true,
+    "allPDFsOptimized": true,
+    "readme'sComplete": true,
+    "gitHistoryPreserved": true,
+    "productionReady": true
+  },
+  "directoryStructure": {
+    "modules": "22 subdirectories with content",
+    "templates": "Master template + CSS styles",
+    "automation": "13 automation scripts and guides",
+    "resources": "Branding and downloadable templates",
+    "research": "Market analysis and strategy documents",
+    "launch": "8 launch materials and checklists",
+    "archived": "7 previous version PDFs"
+  },
+  "lastMaintenance": {
+    "date": "2026-02-05",
+    "action": "Complete repository reorganization",
+    "changes": [
+      "Created professional directory structure",
+      "Moved 22 modules into organized folders",
+      "Archived old PDF versions (V1-V5)",
+      "Created comprehensive README files",
+      "Generated manifest.json for tracking",
+      "Organized automation, resources, launch materials"
+    ]
+  }
+}
