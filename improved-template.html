@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Executive Module Template</title>
+    <style>
+        /* ============================================
+           UNIVERSAL RESET & PAGE SETUP
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #2C3E50;
+            background: #FFFFFF;
+            font-size: 11pt;
+        }
+
+        /* ============================================
+           @PAGE RULES - MARGINS & HEADERS/FOOTERS
+           ============================================ */
+        @page {
+            size: A4;
+            /* Proper margins: 1.25" top/bottom, 1" left/right */
+            margin: 1.25in 1in 1.25in 1in;
+
+            /* Header - Chapter name or module title */
+            @top-left {
+                content: "Executive Forge | Premium Module";
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 9pt;
+                color: #1B3A6B;
+                border-bottom: 1px solid #D4A574;
+                padding-bottom: 0.5in;
+                margin-bottom: 0.5in;
+            }
+
+            @top-right {
+                content: string(chapter-title);
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 9pt;
+                color: #1B3A6B;
+                border-bottom: 1px solid #D4A574;
+                padding-bottom: 0.5in;
+                margin-bottom: 0.5in;
+                text-align: right;
+            }
+
+            /* Footer - Page numbers and copyright */
+            @bottom-center {
+                content: "Page " counter(page) " of " counter(pages);
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 10pt;
+                color: #2C3E50;
+                border-top: 1px solid #D4A574;
+                padding-top: 0.3in;
+            }
+
+            @bottom-right {
+                content: "© Executive Forge " counter(year, decimal);
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 8pt;
+                color: #999;
+                border-top: 1px solid #D4A574;
+                padding-top: 0.3in;
+            }
+        }
+
+        /* First page (cover page) - different margins */
+        @page :first {
+            margin: 0;
+            @top-left { display: none; }
+            @top-right { display: none; }
+            @bottom-center { display: none; }
+            @bottom-right { display: none; }
+        }
+
+        /* TOC page - simpler header/footer */
+        @page table-of-contents {
+            @top-left {
+                content: "Table of Contents";
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+            @top-right {
+                content: "";
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        /* ============================================
+           BODY & CONTAINER
+           ============================================ */
+        body {
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+        }
+
+        .document-container {
+            width: 100%;
+        }
+
+        /* ============================================
+           COVER PAGE
+           ============================================ */
+        .cover-page {
+            page: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1B3A6B 0%, #0F1D41 100%);
+            color: white;
+            text-align: center;
+            padding: 2in;
+            margin: 0;
+            page-break-after: always;
+            box-sizing: border-box;
+        }
+
+        .cover-page::after {
+            content: "";
+            display: block;
+            height: 100vh;
+            page-break-after: always;
+        }
+
+        .cover-module-number {
+            font-size: 14pt;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: #D4A574;
+            text-transform: uppercase;
+            margin-bottom: 0.5in;
+            opacity: 0.9;
+        }
+
+        .cover-title {
+            font-size: 48pt;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.5in;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .cover-subtitle {
+            font-size: 20pt;
+            font-weight: 300;
+            margin-bottom: 1in;
+            color: #D4A574;
+            line-height: 1.4;
+        }
+
+        .cover-tagline {
+            font-size: 12pt;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 4in;
+            margin-bottom: 1.5in;
+            font-style: italic;
+        }
+
+        .cover-brand {
+            border-top: 2px solid #D4A574;
+            border-bottom: 2px solid #D4A574;
+            padding: 0.3in 0;
+            font-size: 11pt;
+            letter-spacing: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .cover-meta {
+            margin-top: 1.5in;
+            font-size: 10pt;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .cover-meta-item {
+            margin: 0.2in 0;
+        }
+
+        /* ============================================
+           TABLE OF CONTENTS PAGE
+           ============================================ */
+        .toc-page {
+            page: table-of-contents;
+            page-break-after: always;
+            padding: 1.25in 1in;
+            page-break-inside: avoid;
+        }
+
+        .toc-title {
+            font-size: 32pt;
+            font-weight: 700;
+            color: #1B3A6B;
+            margin-bottom: 0.5in;
+            border-bottom: 3px solid #D4A574;
+            padding-bottom: 0.25in;
+        }
+
+        .toc-content {
+            margin-top: 0.75in;
+        }
+
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.35in;
+            padding-bottom: 0.15in;
+            border-bottom: 1px dotted #D4A574;
+            align-items: baseline;
+        }
+
+        .toc-item-text {
+            flex: 1;
+            font-size: 11pt;
+            color: #2C3E50;
+            font-weight: 500;
+        }
+
+        .toc-item-page {
+            font-size: 11pt;
+            color: #1B3A6B;
+            font-weight: 600;
+            margin-left: 0.3in;
+            min-width: 0.4in;
+            text-align: right;
+        }
+
+        .toc-item.level-1 {
+            margin-left: 0;
+            margin-top: 0.3in;
+            margin-bottom: 0.25in;
+        }
+
+        .toc-item.level-2 {
+            margin-left: 0.4in;
+            font-size: 10pt;
+            color: #555;
+        }
+
+        /* ============================================
+           CONTENT SECTIONS & TYPOGRAPHY
+           ============================================ */
+        .content {
+            page-break-after: avoid;
+        }
+
+        .chapter-marker {
+            string-set: chapter-title content(text);
+        }
+
+        h1 {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #1B3A6B;
+            margin-top: 0;
+            margin-bottom: 0.4in;
+            line-height: 1.3;
+            page-break-after: avoid;
+            border-bottom: 2px solid #D4A574;
+            padding-bottom: 0.25in;
+        }
+
+        h1.first-heading {
+            page-break-before: always;
+            margin-top: 0.5in;
+        }
+
+        h2 {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #1B3A6B;
+            margin-top: 1in;
+            margin-bottom: 0.35in;
+            line-height: 1.3;
+            page-break-after: avoid;
+            border-left: 5px solid #D4A574;
+            padding-left: 0.25in;
+            page-break-before: avoid;
+        }
+
+        /* Add page break after h2 to keep sections separated */
+        h2 {
+            page-break-after: auto;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            margin-top: 0.5in;
+        }
+
+        h3 {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #1B3A6B;
+            margin-top: 0.6in;
+            margin-bottom: 0.25in;
+            line-height: 1.3;
+            page-break-after: avoid;
+        }
+
+        h4 {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1B3A6B;
+            margin-top: 0.4in;
+            margin-bottom: 0.2in;
+            page-break-after: avoid;
+        }
+
+        p {
+            font-size: 11pt;
+            line-height: 1.75;
+            margin-bottom: 0.3in;
+            text-align: left;
+            color: #2C3E50;
+            orphans: 2;
+            widows: 2;
+        }
+
+        p.lead {
+            font-size: 12pt;
+            font-weight: 500;
+            color: #1B3A6B;
+            margin-bottom: 0.4in;
+            line-height: 1.6;
+        }
+
+        p.tagline {
+            font-size: 12pt;
+            font-style: italic;
+            color: #D4A574;
+            margin: 0.5in 0;
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           LISTS & EMPHASIS
+           ============================================ */
+        ul, ol {
+            margin: 0.3in 0 0.3in 0.5in;
+            padding-left: 0.3in;
+            page-break-inside: avoid;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            font-size: 11pt;
+            margin-bottom: 0.15in;
+            line-height: 1.65;
+            color: #2C3E50;
+        }
+
+        li strong {
+            color: #1B3A6B;
+        }
+
+        /* Nested lists */
+        ul ul, ol ol, ul ol, ol ul {
+            margin-top: 0.15in;
+            margin-bottom: 0.15in;
+            margin-left: 0.4in;
+        }
+
+        strong, .strong {
+            font-weight: 600;
+            color: #1B3A6B;
+        }
+
+        em, .emphasis {
+            font-style: italic;
+            color: #2C3E50;
+        }
+
+        .highlight {
+            background-color: #FFF3CD;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        .highlight-primary {
+            background-color: #E3F2FD;
+            color: #1B3A6B;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        .highlight-accent {
+            background-color: #FFE8CC;
+            color: #B8860B;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        /* ============================================
+           LINKS & CODE
+           ============================================ */
+        a {
+            color: #1B3A6B;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #D4A574;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #D4A574;
+            border-bottom-color: #1B3A6B;
+        }
+
+        /* Hide hashtags from anchor links in print */
+        a[href*="#"]::after {
+            content: "";
+        }
+
+        code, .code {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            background-color: #F8F9FA;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10pt;
+            color: #D32F2F;
+            font-weight: 500;
+        }
+
+        pre, .code-block {
+            background-color: #F8F9FA;
+            border: 1px solid #E0E6ED;
+            border-left: 4px solid #D4A574;
+            padding: 0.4in;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 0.3in 0;
+            page-break-inside: avoid;
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            font-size: 9pt;
+            line-height: 1.5;
+            color: #2C3E50;
+        }
+
+        pre code, .code-block code {
+            background: none;
+            padding: 0;
+            color: #2C3E50;
+            border: none;
+        }
+
+        /* ============================================
+           TABLES
+           ============================================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.4in 0;
+            page-break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+
+        thead {
+            background-color: #1B3A6B;
+            color: white;
+        }
+
+        th {
+            padding: 0.2in;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid #D4A574;
+            font-size: 10pt;
+        }
+
+        td {
+            padding: 0.2in;
+            border: 1px solid #E0E6ED;
+            color: #2C3E50;
+            font-size: 10pt;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #F8F9FA;
+        }
+
+        tbody tr:hover {
+            background-color: #F0F0F0;
+        }
+
+        /* ============================================
+           BLOCKQUOTES & CALLOUTS
+           ============================================ */
+        blockquote {
+            border-left: 4px solid #D4A574;
+            padding: 0.3in 0.3in 0.3in 0.4in;
+            margin: 0.4in 0;
+            background-color: #FFF9F0;
+            font-style: italic;
+            color: #1B3A6B;
+            page-break-inside: avoid;
+        }
+
+        .callout {
+            border: 1px solid #D4A574;
+            border-left: 4px solid #D4A574;
+            padding: 0.3in;
+            margin: 0.4in 0;
+            background-color: #FFFBF5;
+            page-break-inside: avoid;
+        }
+
+        .callout-title {
+            font-weight: 600;
+            color: #1B3A6B;
+            margin-bottom: 0.1in;
+            font-size: 11pt;
+        }
+
+        .callout-content {
+            font-size: 10pt;
+            color: #2C3E50;
+            line-height: 1.6;
+        }
+
+        .note {
+            background-color: #E3F2FD;
+            border-left: 4px solid #1B3A6B;
+            padding: 0.3in;
+            margin: 0.4in 0;
+            page-break-inside: avoid;
+        }
+
+        .warning {
+            background-color: #FFF3CD;
+            border-left: 4px solid #FF9800;
+            padding: 0.3in;
+            margin: 0.4in 0;
+            page-break-inside: avoid;
+        }
+
+        .success {
+            background-color: #D4EDDA;
+            border-left: 4px solid #28A745;
+            padding: 0.3in;
+            margin: 0.4in 0;
+            page-break-inside: avoid;
+        }
+
+        /* ============================================
+           DATA VISUALIZATION SUPPORT
+           ============================================ */
+        .chart-container, .visualization-container, .graph-container {
+            margin: 0.5in 0;
+            padding: 0.4in;
+            border: 1px solid #E0E6ED;
+            border-radius: 4px;
+            background-color: #F8F9FA;
+            page-break-inside: avoid;
+            text-align: center;
+            min-height: 2.5in;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chart-title, .visualization-title {
+            font-weight: 600;
+            color: #1B3A6B;
+            margin-bottom: 0.2in;
+            font-size: 12pt;
+        }
+
+        .chart-description, .visualization-description {
+            font-size: 10pt;
+            color: #999;
+            font-style: italic;
+            margin-top: 0.2in;
+        }
+
+        /* Chart types */
+        .chart-bar, .chart-line, .chart-pie, .chart-scatter {
+            width: 100%;
+            height: 3in;
+            page-break-inside: avoid;
+        }
+
+        /* ============================================
+           PAGE BREAKS & SPACING
+           ============================================ */
+        .page-break {
+            page-break-after: always;
+            content: "";
+            display: block;
+            margin: 0;
+            padding: 0;
+            height: 0;
+        }
+
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        .section-break {
+            margin: 0.75in 0;
+            border-top: 2px solid #D4A574;
+            padding-top: 0.25in;
+            page-break-inside: avoid;
+        }
+
+        .spacer-sm {
+            margin: 0.2in 0;
+        }
+
+        .spacer-md {
+            margin: 0.4in 0;
+        }
+
+        .spacer-lg {
+            margin: 0.75in 0;
+        }
+
+        /* ============================================
+           SPECIAL SECTIONS
+           ============================================ */
+        .module-header {
+            border-bottom: 3px solid #1B3A6B;
+            padding-bottom: 0.3in;
+            margin-bottom: 0.5in;
+            page-break-after: avoid;
+        }
+
+        .module-brand {
+            display: block;
+            font-weight: 700;
+            color: #1B3A6B;
+            font-size: 12pt;
+            letter-spacing: 2px;
+            margin-bottom: 0.2in;
+            text-transform: uppercase;
+        }
+
+        .module-meta {
+            font-size: 10pt;
+            color: #999;
+            font-style: italic;
+            margin-top: 0.2in;
+        }
+
+        .conclusion-section {
+            margin-top: 1in;
+            border-top: 2px solid #1B3A6B;
+            padding-top: 0.5in;
+            page-break-inside: avoid;
+        }
+
+        .next-module {
+            font-size: 11pt;
+            color: #1B3A6B;
+            font-weight: 500;
+            margin-top: 0.3in;
+        }
+
+        /* ============================================
+           PRINT-SPECIFIC STYLES
+           ============================================ */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                text-decoration: underline;
+                color: #1B3A6B;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+
+            ul, ol, table, pre, .callout, .note, .warning, .success, blockquote {
+                page-break-inside: avoid;
+            }
+
+            p, li {
+                orphans: 3;
+                widows: 3;
+            }
+
+            img {
+                max-width: 100%;
+                page-break-inside: avoid;
+            }
+
+            /* Hide navigation elements */
+            nav, .nav, [role="navigation"] {
+                display: none;
+            }
+
+            /* Force color printing */
+            body {
+                background: white;
+                color: #2C3E50;
+            }
+
+            .cover-page {
+                page-break-after: always;
+            }
+        }
+
+        /* ============================================
+           UTILITIES
+           ============================================ */
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .text-primary {
+            color: #1B3A6B;
+        }
+
+        .text-accent {
+            color: #D4A574;
+        }
+
+        .text-secondary {
+            color: #2C3E50;
+        }
+
+        .text-muted {
+            color: #999;
+        }
+
+        .bg-primary {
+            background-color: #1B3A6B;
+            color: white;
+            padding: 0.3in;
+            border-radius: 4px;
+        }
+
+        .bg-accent {
+            background-color: #FFE8CC;
+            padding: 0.3in;
+            border-radius: 4px;
+        }
+
+        .bg-light {
+            background-color: #F8F9FA;
+            padding: 0.3in;
+            border-radius: 4px;
+        }
+
+        /* Margin utilities */
+        .mt-0 { margin-top: 0; }
+        .mt-1 { margin-top: 0.2in; }
+        .mt-2 { margin-top: 0.4in; }
+        .mt-3 { margin-top: 0.6in; }
+
+        .mb-0 { margin-bottom: 0; }
+        .mb-1 { margin-bottom: 0.2in; }
+        .mb-2 { margin-bottom: 0.4in; }
+        .mb-3 { margin-bottom: 0.6in; }
+
+        /* ============================================
+           HASHTAG HIDING (prevents # from printing)
+           ============================================ */
+        .hashtag, [data-type="hashtag"] {
+            display: none;
+        }
+
+        /* Hide inline hashtags in paragraphs */
+        p::after, li::after {
+            content: "";
+        }
+
+        /* Replace anchor links - hide hash identifiers */
+        h1[id]::before,
+        h2[id]::before,
+        h3[id]::before,
+        h4[id]::before {
+            content: "";
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="document-container">
+        
+        <!-- ============================================
+             COVER PAGE
+             ============================================ -->
+        <div class="cover-page">
+            <div class="cover-module-number">Module 05</div>
+            <h1 class="cover-title">Systems Thinking for Operators</h1>
+            <p class="cover-subtitle">Scaling Without Breaking</p>
+            <p class="cover-tagline">Master the principles of systems thinking to eliminate bottlenecks, leverage high-impact changes, and build organizational architecture that scales.</p>
+            <div class="cover-brand">Executive Forge</div>
+            <div class="cover-meta">
+                <div class="cover-meta-item">Premium Module • $29.99</div>
+                <div class="cover-meta-item">30 Pages • Executive Edition</div>
+                <div class="cover-meta-item">Generated February 2026</div>
+            </div>
+        </div>
+
+        <!-- ============================================
+             TABLE OF CONTENTS
+             ============================================ -->
+        <div class="toc-page">
+            <h1 class="toc-title">Table of Contents</h1>
+            <div class="toc-content">
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">Introduction: Why Operators Break</span>
+                    <span class="toc-item-page">1</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">The System Thinking Foundation</span>
+                    <span class="toc-item-page">2</span>
+                </div>
+                <div class="toc-item level-2">
+                    <span class="toc-item-text">System Thinking Principles</span>
+                    <span class="toc-item-page">2</span>
+                </div>
+                <div class="toc-item level-2">
+                    <span class="toc-item-text">Exercise: Map Your Company</span>
+                    <span class="toc-item-page">3</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">Identifying Your Critical Bottlenecks</span>
+                    <span class="toc-item-page">4</span>
+                </div>
+                <div class="toc-item level-2">
+                    <span class="toc-item-text">The Bottleneck Framework</span>
+                    <span class="toc-item-page">4</span>
+                </div>
+                <div class="toc-item level-2">
+                    <span class="toc-item-text">Breaking the Bottleneck</span>
+                    <span class="toc-item-page">5</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">The Leverage Matrix: Where to Spend Energy</span>
+                    <span class="toc-item-page">6</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">Building for Scaling: Architecture Principles</span>
+                    <span class="toc-item-page">7</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">The Operating System of Your Company</span>
+                    <span class="toc-item-page">8</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">Case Studies: Systems Thinking in Practice</span>
+                    <span class="toc-item-page">9</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">Implementation: Building Your System</span>
+                    <span class="toc-item-page">11</span>
+                </div>
+                <div class="toc-item level-1">
+                    <span class="toc-item-text">Conclusion</span>
+                    <span class="toc-item-page">12</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================
+             MAIN CONTENT
+             ============================================ -->
+        <div class="content">
+            
+            <h1 class="first-heading">Introduction: Why Operators Break</h1>
+
+            <p class="lead">You hit $2M revenue. Growth was chaos but manageable.</p>
+
+            <p>Now you're at $5M, and you're drowning.</p>
+
+            <p>You hired more people. Revenue kept growing. But:</p>
+            <ul>
+                <li>Communication got slower</li>
+                <li>Decision quality decreased</li>
+                <li>People are confused about priorities</li>
+                <li>You're working 70-hour weeks just keeping things together</li>
+            </ul>
+
+            <p><strong>Here's what happened: You scaled linearly but your systems needed to scale exponentially.</strong></p>
+
+            <p>At $2M, you could have everyone in one room. Decisions were verbal. Context was shared.</p>
+
+            <p>At $5M, that doesn't work anymore. You need systems, processes, and structure.</p>
+
+            <p>Most operators resist this. They think: "Systems slow us down. We want to stay fast and scrappy."</p>
+
+            <p class="highlight"><strong>This is wrong.</strong> Systems are what let you scale. Without them, you get slower, not faster.</p>
+
+            <h3>What This Module Covers</h3>
+
+            <ol>
+                <li><strong>System thinking</strong> – How to see your company as an interconnected whole</li>
+                <li><strong>Critical bottlenecks</strong> – Where to spend energy (usually not where you think)</li>
+                <li><strong>Leverage</strong> – Which changes create 10x impact vs. 10% improvement</li>
+                <li><strong>Architecture</strong> – How to structure your company to scale</li>
+                <li><strong>Operating systems</strong> – The processes that let you scale without breaking</li>
+            </ol>
+
+            <div class="section-break"></div>
+
+            <h2>The System Thinking Foundation</h2>
+
+            <p>A system is a set of interconnected elements that work together to achieve an outcome.</p>
+
+            <p>Your company is a system. It has:</p>
+            <ul>
+                <li><strong>Inputs:</strong> Money, people, attention</li>
+                <li><strong>Processes:</strong> How work gets done (hiring, product development, sales)</li>
+                <li><strong>Outputs:</strong> Revenue, customer satisfaction, profit</li>
+                <li><strong>Feedback loops:</strong> What tells you if it's working?</li>
+            </ul>
+
+            <p>Most operators manage individual pieces (hire someone, launch a feature, close a deal) without seeing how it affects the whole system.</p>
+
+            <h3>The System Thinking Principles</h3>
+
+            <h4>Principle 1: Optimization at One Point Breaks the System Elsewhere</h4>
+
+            <p>Example: You optimize sales by pushing hard on closed deals. Great! Revenue increases.</p>
+
+            <p>But what happens to customer success? If they're not ready for customers who are less well-fit, satisfaction drops. These unhappy customers churn and hurt your brand.</p>
+
+            <p class="highlight-primary"><strong>You optimized sales and destroyed retention.</strong></p>
+
+            <blockquote>The system perspective: You can't optimize revenue in isolation. You must consider the whole customer lifecycle.</blockquote>
+
+            <h4>Principle 2: The System's Output is Determined by Its Constraints</h4>
+
+            <p>This is the theory of constraints (TOC). Your company's performance is limited by its slowest part, not its fastest.</p>
+
+            <p>If your:</p>
+            <ul>
+                <li>Sales is 10x better but product development is slow → You build a backlog of unhappy customers</li>
+                <li>Product is amazing but sales is weak → Revenue stalls</li>
+                <li>Operations is chaotic → Everything else becomes harder</li>
+            </ul>
+
+            <blockquote>The system perspective: Find your current bottleneck and invest there, not in your strength.</blockquote>
+
+            <h4>Principle 3: Feedback Loops Determine Behavior</h4>
+
+            <p>What gets measured gets done. What doesn't get measured gets ignored.</p>
+
+            <p>If you measure revenue but not customer satisfaction, your team will chase revenue (and sacrifice satisfaction).</p>
+
+            <p>If you measure speed but not quality, your team will ship fast and break things.</p>
+
+            <blockquote>The system perspective: Design feedback loops that reinforce the behaviors you want.</blockquote>
+
+            <h3>Exercise: Map Your Company</h3>
+
+            <p>For each major process, answer:</p>
+            <ol>
+                <li>What's the input? (What does this process consume?)</li>
+                <li>What's the output? (What does it produce?)</li>
+                <li>What constrains this process? (What's the bottleneck?)</li>
+                <li>What feedback do we have? (How do we know if it's working?)</li>
+                <li>How does this affect the rest of the company? (Upstream/downstream impacts)</li>
+            </ol>
+
+            <div class="callout">
+                <div class="callout-title">Visualization: Your Company as a System</div>
+                <div class="callout-content">
+                    Create a diagram showing inputs → processes → outputs → feedback loops. This visual map is invaluable for understanding how your company actually works.
+                </div>
+            </div>
+
+            <div class="spacer-lg"></div>
+
+            <h2>Identifying Your Critical Bottlenecks</h2>
+
+            <p>Most operators have no idea what their actual bottleneck is.</p>
+
+            <p>They think it's engineering. They hire more engineers. Six months later, the bottleneck is still there—it just moved somewhere else.</p>
+
+            <h3>The Bottleneck Framework</h3>
+
+            <p class="lead">For each critical process, score where the constraint actually is:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Today's Constraint</th>
+                        <th>Severity (1-5)</th>
+                        <th>Evidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hiring</td>
+                        <td>Sales/Engineering/Operations</td>
+                        <td>3</td>
+                        <td>Specific metric</td>
+                    </tr>
+                    <tr>
+                        <td>Product Development</td>
+                        <td>Clarity/Capacity/Skills</td>
+                        <td>4</td>
+                        <td>3-month backlog</td>
+                    </tr>
+                    <tr>
+                        <td>Sales</td>
+                        <td>Lead Gen/Conversion/Close</td>
+                        <td>3</td>
+                        <td>Pipeline analysis</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Success</td>
+                        <td>Onboarding/Support/Retention</td>
+                        <td>5</td>
+                        <td>7% monthly churn</td>
+                    </tr>
+                    <tr>
+                        <td>Operations</td>
+                        <td>Process/Tools/People</td>
+                        <td>2</td>
+                        <td>Stable and efficient</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="text-muted" style="margin-top: 0.2in;"><strong>Your real bottleneck is the one with the highest severity score.</strong></p>
+
+            <div class="note">
+                <strong>Pro Tip:</strong> Don't guess. Collect data. Interview your team. Review metrics. Identify the actual constraint, not the assumed one.
+            </div>
+
+            <h3>Breaking the Bottleneck</h3>
+
+            <p>Once you identify the bottleneck, you have options:</p>
+
+            <h4>Option 1: Hire for It</h4>
+            <ul>
+                <li>Add capacity to the bottleneck</li>
+                <li>This works if the constraint is pure capacity</li>
+                <li>Doesn't work if the constraint is process or clarity</li>
+            </ul>
+
+            <h4>Option 2: Automate/Systematize It</h4>
+            <ul>
+                <li>Create a process that makes the bottleneck more efficient</li>
+                <li>Works if the constraint is process or manual work</li>
+                <li>Doesn't work if the constraint is expertise or judgment</li>
+            </ul>
+
+            <h4>Option 3: Eliminate the Step</h4>
+            <ul>
+                <li>Do you actually need this process?</li>
+                <li>Rethink the approach</li>
+                <li>Works if the constraint is a step that doesn't add value</li>
+            </ul>
+
+            <h4>Option 4: Work Around It</h4>
+            <ul>
+                <li>Find an alternative approach that bypasses the bottleneck</li>
+                <li>Works if there's a different path</li>
+            </ul>
+
+            <div class="success">
+                <strong>Case Example: Engineering Bottleneck</strong><br/>
+                If you have a 3-month feature backlog, the wrong approach is to hire more engineers immediately. First, understand WHY velocity is slow: technical debt? Unclear requirements? Context-switching? Fix the cause, not the symptom.
+            </div>
+
+            <div class="spacer-lg"></div>
+
+            <h2>The Leverage Matrix: Where to Spend Energy</h2>
+
+            <p>Not all improvements are equal. Some changes move the needle 10x. Others improve things 10%.</p>
+
+            <p class="lead">The difference is leverage.</p>
+
+            <h3>The Change Matrix Framework</h3>
+
+            <p>For each potential change, score on two dimensions:</p>
+            <ul>
+                <li><strong>Impact:</strong> How much does this move the needle? (1-10)</li>
+                <li><strong>Effort:</strong> How much time/money/risk does it take? (1-10)</li>
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Change</th>
+                        <th>Impact</th>
+                        <th>Effort</th>
+                        <th>Leverage</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Improve onboarding</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>HIGH</td>
+                        <td>Do now</td>
+                    </tr>
+                    <tr>
+                        <td>Redesign codebase</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>LOW</td>
+                        <td>Plan later</td>
+                    </tr>
+                    <tr>
+                        <td>Customer advisory board</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>VERY HIGH</td>
+                        <td>Do now</td>
+                    </tr>
+                    <tr>
+                        <td>Salesforce implementation</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>VERY LOW</td>
+                        <td>Skip</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="highlight"><strong>Priority:</strong> Focus on high-leverage changes. Avoid low-leverage initiatives that consume time without moving the needle.</p>
+
+            <div class="spacer-lg"></div>
+
+            <h2>Building for Scaling: Architecture Principles</h2>
+
+            <p>As you grow, how you're organized matters immensely. Your organizational structure should match how work actually flows.</p>
+
+            <h3>Core Architecture Principles</h3>
+
+            <h4>Principle 1: Align Structure to Workflow</h4>
+
+            <p>If your company is:</p>
+            <ul>
+                <li><strong>Product-centric:</strong> Organize by product line</li>
+                <li><strong>Customer-centric:</strong> Organize by customer segment</li>
+                <li><strong>Function-centric:</strong> Organize by function (engineering, sales, success)</li>
+            </ul>
+
+            <h4>Principle 2: Clear Ownership and Decision Rights</h4>
+
+            <p>Every major area should have one owner who owns the outcome. Create a clear RACI matrix:</p>
+            <ul>
+                <li><strong>R</strong>esponsible – Who does the work?</li>
+                <li><strong>A</strong>ccountable – Who owns the outcome?</li>
+                <li><strong>C</strong>onsulted – Who provides input?</li>
+                <li><strong>I</strong>nformed – Who needs to know?</li>
+            </ul>
+
+            <h4>Principle 3: Span of Control</h4>
+
+            <p>The number of direct reports you can manage well is <strong>5-8</strong>:</p>
+            <ul>
+                <li>Less than 5: You're probably micromanaging</li>
+                <li>5-8: Healthy</li>
+                <li>More than 9: You're not managing well</li>
+            </ul>
+
+            <div class="chart-container">
+                <div class="chart-title">Organization Structure Evolution</div>
+                <p style="margin: 0.3in; color: #999; font-size: 10pt;">
+                    <strong>Stage 1 ($1-2M):</strong> Founder-led, flat structure<br/>
+                    <strong>Stage 2 ($2-5M):</strong> Functional leaders (VP Sales, VP Eng, VP Success)<br/>
+                    <strong>Stage 3 ($5-15M):</strong> Specialized roles with clear ownership
+                </p>
+            </div>
+
+            <div class="spacer-lg"></div>
+
+            <h2>The Operating System of Your Company</h2>
+
+            <p>An operating system for your company is the set of processes that let it run without constant leadership intervention.</p>
+
+            <p class="lead">Without an OS, you can't scale. With one, you can.</p>
+
+            <h3>Core OS Components</h3>
+
+            <h4>Component 1: Planning</h4>
+            <ul>
+                <li>How do you set goals? (Annual? Quarterly?)</li>
+                <li>How do you prioritize? (What makes the cut?)</li>
+                <li>How do you communicate? (All-hands? Written?)</li>
+            </ul>
+
+            <h4>Component 2: Execution</h4>
+            <ul>
+                <li>How are teams organized? (By function? By product?)</li>
+                <li>How do they coordinate? (Standups? Async?)</li>
+                <li>How do they report progress? (Metrics? Weekly updates?)</li>
+            </ul>
+
+            <h4>Component 3: Feedback & Adjustment</h4>
+            <ul>
+                <li>How do you know if you're on track? (What metrics matter?)</li>
+                <li>How often do you review? (Weekly? Monthly?)</li>
+                <li>How do you adjust? (Quick pivots? Big changes?)</li>
+            </ul>
+
+            <h4>Component 4: Hiring & Development</h4>
+            <ul>
+                <li>How do you hire? (Process? Standards?)</li>
+                <li>How do you onboard? (First 30/60/90?)</li>
+                <li>How do you develop? (Training? Promotions?)</li>
+            </ul>
+
+            <h4>Component 5: Communication</h4>
+            <ul>
+                <li>How is information shared? (Sync vs. async?)</li>
+                <li>How do decisions get communicated? (Broadcast? Discussion?)</li>
+                <li>How do you get feedback? (Anonymous? Direct?)</li>
+            </ul>
+
+            <div class="spacer-lg"></div>
+
+            <h2>Case Studies: Systems Thinking in Practice</h2>
+
+            <h3>Case Study 1: The Onboarding Bottleneck</h3>
+
+            <p><strong>Company:</strong> B2B SaaS, $3M ARR, 25 employees</p>
+
+            <h4>The Problem</h4>
+            <ul>
+                <li>Churn rate: 8-10% per month (very high)</li>
+                <li>Customer NPS: 32 (should be 50+)</li>
+                <li>Revenue growth: 15% MoM (should be 20%+)</li>
+            </ul>
+
+            <h4>Root Cause Analysis</h4>
+
+            <p>Time from contract to first value was 3-4 weeks. In that time, customers forgot why they bought or became frustrated.</p>
+
+            <p><strong>Solution (not hiring):</strong></p>
+            <ol>
+                <li>Systematize onboarding with documented playbook</li>
+                <li>Move first call from week 3 to day 1</li>
+                <li>Create in-product guidance and progressive disclosure</li>
+                <li>Track and iterate on time-to-first-value</li>
+            </ol>
+
+            <p><strong>Results:</strong></p>
+            <ul>
+                <li>Time-to-first-value: 3 weeks → 3 days</li>
+                <li>Activated by day 7: 35% → 85%</li>
+                <li>Churn: 8% → 3% (cut in half)</li>
+                <li>Revenue growth: 15% → 22% MoM</li>
+            </ul>
+
+            <div class="warning">
+                <strong>Key Insight:</strong> The bottleneck wasn't the team. It was the process. Fixing the process worked better than hiring.
+            </div>
+
+            <h3>Case Study 2: Organization Structure During Scaling</h3>
+
+            <p><strong>Company:</strong> Dev tools, grew from $2M to $6M ARR in 18 months</p>
+
+            <h4>The Problem</h4>
+            <ul>
+                <li>Communication breaking down</li>
+                <li>Decisions getting slower</li>
+                <li>Duplicate work between sales and engineering</li>
+                <li>Customer expectations misaligned</li>
+            </ul>
+
+            <h4>The Solution</h4>
+
+            <p>Reorganized from function-based to outcome-based structure, separating SMB and Enterprise lines with dedicated product/success/sales teams.</p>
+
+            <h4>Results</h4>
+            <ul>
+                <li>SMB product evolved 2x faster</li>
+                <li>Enterprise product became more sophisticated</li>
+                <li>Sales aligned with success (same team)</li>
+                <li>Decision time decreased (clearer ownership)</li>
+            </ul>
+
+            <div class="spacer-lg"></div>
+
+            <h2>Implementation: Building Your System</h2>
+
+            <h3>Week 1: Map Your Current System</h3>
+
+            <p>Create a diagram with:</p>
+            <ul>
+                <li>Key processes (hiring, sales, product, success)</li>
+                <li>Inputs and outputs for each</li>
+                <li>What constrains each process</li>
+                <li>How they interact</li>
+            </ul>
+
+            <h3>Week 2: Diagnose Your Bottleneck</h3>
+
+            <p>Score each major process on: Capacity, Process clarity, Skills</p>
+
+            <p>Focus on the lowest-scoring area. That's your bottleneck.</p>
+
+            <h3>Week 3-4: Design Your Leverage Plan</h3>
+
+            <p>List changes for the next 12 months and prioritize by leverage:</p>
+            <ol>
+                <li><strong>High leverage</strong> – Do in Q1/Q2</li>
+                <li><strong>Medium leverage</strong> – Do in Q2/Q3</li>
+                <li><strong>Low leverage</strong> – Deprioritize</li>
+            </ol>
+
+            <h3>Ongoing: Build Your Operating System</h3>
+
+            <p>Document:</p>
+            <ol>
+                <li>Planning process</li>
+                <li>Execution model</li>
+                <li>Feedback loops</li>
+                <li>Hiring & development</li>
+                <li>Communication guidelines</li>
+            </ol>
+
+            <div class="note">
+                <strong>Remember:</strong> Version 1 doesn't need to be perfect. Build it, test it, improve it quarterly.
+            </div>
+
+            <div class="spacer-lg"></div>
+
+            <h2 class="conclusion-section">Conclusion</h2>
+
+            <p class="lead">Systems thinking is how you scale without breaking.</p>
+
+            <p>The operators who hit $50M+ aren't necessarily smarter or working harder. They've learned to think in systems:</p>
+            <ul>
+                <li>Identify bottlenecks (don't guess)</li>
+                <li>Invest in high-leverage changes</li>
+                <li>Build organization structure to match growth stage</li>
+                <li>Create an operating system that scales</li>
+            </ul>
+
+            <p>The companies that break at $5-10M usually break because they didn't invest in systems. They kept operating like a 10-person company even though they had 50.</p>
+
+            <p class="highlight-accent"><strong>Your job is to get ahead of that.</strong> Build your systems now, before they become a crisis.</p>
+
+            <p class="next-module">Next module: Customer Acquisition Mastery</p>
+
+        </div>
+
+    </div>
+</body>
+</html>
