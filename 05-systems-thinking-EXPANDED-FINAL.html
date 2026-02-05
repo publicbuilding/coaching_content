@@ -21,7 +21,7 @@
 
         @page {
             size: A4;
-            margin: 1.5in 0.75in 1.5in 0.75in;
+            margin: 0.4in 2in 0.4in 2in;
 
             @top-left {
                 content: "Executive Forge | Premium Module";
@@ -171,6 +171,13 @@
 
         h2:first-of-type {
             page-break-before: avoid;
+        }
+
+        h2#case-studies {
+            page-break-before: always;
+            font-size: 22pt !important;
+            margin: 1.5in 0 0.4in 0;
+            padding: 0.35in 0.75in;
         }
 
         h3 {
@@ -524,11 +531,24 @@
             font-size: 14pt;
         }
 
+        .company-profile {
+            font-size: 12pt;
+            color: #999;
+            background-color: transparent;
+            font-weight: 400;
+            margin: 0.3in 0 0.2in 0;
+            padding: 0;
+            border: none;
+            page-break-after: avoid;
+        }
+
         .case-study-metric {
             background-color: #FFF3CD;
             border-left: 4px solid #D4A574;
             padding: 0.3in 0.75in;
             margin: 0.4in 0;
+            margin-left: 0;
+            margin-right: 0;
             page-break-inside: avoid;
         }
 
@@ -1920,11 +1940,9 @@
 
         <h2 id="case-studies">Case Studies: Systems Thinking in Practice</h2>
 
-        <h2>Case Study 1: The Onboarding Bottleneck</h2>
+        <h2 style="page-break-after: avoid; margin-bottom: 0.2in;">Case Study 1: The Onboarding Bottleneck</h2>
 
-        <div class="case-study-header">
-            <h3>Company Profile: Enterprise SaaS at Series A</h3>
-        </div>
+        <div class="company-profile">Company Profile: Enterprise SaaS at Series A</div>
 
         <p><strong>Company Size:</strong> 25 employees | <strong>Industry:</strong> B2B SaaS | <strong>Market:</strong> Enterprise workflow automation</p>
 
@@ -2065,11 +2083,9 @@
 
         <p>---</p>
 
-        <h2>Case Study 2: The Scaling Trap</h2>
+        <h2 style="page-break-after: avoid; margin-bottom: 0.2in;">Case Study 2: The Scaling Trap</h2>
 
-        <div class="case-study-header">
-            <h3>Company Profile: SaaS Growth-Stage, Series B</h3>
-        </div>
+        <div class="company-profile">Company Profile: SaaS Growth-Stage, Series B</div>
 
         <p><strong>Company Size:</strong> 120 employees | <strong>Industry:</strong> Marketing Automation | <strong>Market:</strong> Mid-market SaaS</p>
 
@@ -2209,11 +2225,9 @@
 
         <p>---</p>
 
-        <h2>Case Study 3: The Operational Bottleneck</h2>
+        <h2 style="page-break-after: avoid; margin-bottom: 0.2in;">Case Study 3: The Operational Bottleneck</h2>
 
-        <div class="case-study-header">
-            <h3>Company Profile: Services Firm at Growth Inflection</h3>
-        </div>
+        <div class="company-profile">Company Profile: Services Firm at Growth Inflection</div>
 
         <p><strong>Company Size:</strong> 85 employees | <strong>Industry:</strong> Digital Services Agency | <strong>Market:</strong> Enterprise UX/Product Design</p>
 
@@ -2353,11 +2367,9 @@
 
         <p>---</p>
 
-        <h2>Case Study 4: The Failure Case - When Systems Thinking Was Ignored</h2>
+        <h2 style="page-break-after: avoid; margin-bottom: 0.2in;">Case Study 4: The Failure Case - When Systems Thinking Was Ignored</h2>
 
-        <div class="case-study-header">
-            <h3>Company Profile: Marketplace Startup</h3>
-        </div>
+        <div class="company-profile">Company Profile: Marketplace Startup</div>
 
         <p><strong>Company Size at peak:</strong> 150 employees | <strong>Industry:</strong> On-demand services | <strong>Market:</strong> Vertical marketplace</p>
 
@@ -2730,11 +2742,11 @@
 
         <p>---</p>
 
-        <h2>Quick Reference: The Systems Thinking Checklist</h2>
+        <h2 style="page-break-before: avoid;">Quick Reference: The Systems Thinking Checklist</h2>
 
         <p><strong>Use this checklist quarterly to audit your system health:</strong></p>
 
-        <div class="concept-box">
+        <div class="concept-box" style="page-break-before: avoid;">
             <div class="concept-title">System Health Audit Checklist</div>
 
             <p><strong>Bottlenecks</strong></p>
