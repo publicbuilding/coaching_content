@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building High-Performance Teams: Hiring, Firing, and Culture Architecture - Executive Forge</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1in;
+            @top-center {
+                content: "Building High-Performance Teams: Hiring, Firing, and Culture Architecture";
+                font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 11pt;
+                color: #2C3E50;
+            }
+            @bottom-center {
+                content: "Page " counter(page) " of " counter(pages);
+                font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 10pt;
+                color: #2C3E50;
+            }
+            @bottom-right {
+                content: "© Executive Forge";
+                font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 9pt;
+                color: #2C3E50;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+            background: white;
+        }
+
+        body {
+            padding: 40px 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Branding Header */
+        .document-header {
+            border-bottom: 3px solid #1B3A6B;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .document-header::before {
+            content: "🏆";
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .brand-mark {
+            display: inline-block;
+            font-weight: 700;
+            color: #1B3A6B;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #1B3A6B;
+            font-size: 32pt;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            page-break-after: avoid;
+        }
+
+        h2 {
+            color: #1B3A6B;
+            font-size: 18pt;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            border-left: 4px solid #D4A574;
+            padding-left: 12px;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: #1B3A6B;
+            font-size: 14pt;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            font-size: 11pt;
+            line-height: 1.65;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #1B3A6B;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #D4A574;
+        }
+
+        a:hover {
+            background-color: #F8F9FA;
+        }
+
+        code {
+            font-family: "IBM Plex Mono", "Courier New", monospace;
+            background-color: #F8F9FA;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10pt;
+            color: #D32F2F;
+        }
+
+        pre {
+            background-color: #F8F9FA;
+            border: 1px solid #E0E6ED;
+            border-left: 4px solid #D4A574;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 15px 0;
+            page-break-inside: avoid;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #2C3E50;
+            font-size: 9pt;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #1B3A6B;
+        }
+
+        em {
+            font-style: italic;
+            color: #2C3E50;
+        }
+
+        .highlight {
+            background-color: #FFF3CD;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            a {
+                text-decoration: underline;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            ul, ol {
+                page-break-inside: avoid;
+            }
+            
+            p {
+                orphans: 2;
+                widows: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-header">
+        <div class="brand-mark">EXECUTIVE FORGE</div>
+        <h1>Building High-Performance Teams: Hiring, Firing, and Culture Architecture</h1>
+        <p style="color: #D4A574; font-size: 11pt; margin-top: 5px;">
+            Premium Module • Generated February 04, 2026
+        </p>
+    </div>
+
+    <div class="content">
+        <h1>Building High-Performance Teams: Hiring, Firing, and Culture Architecture</h1>
+
+<strong>Premium Module | $29.99 | 34 Pages</strong>
+
+<em>Most leadership advice is generic. This module is ruthlessly specific about building teams that scale, removing people who drag you down, and architecting a culture that compounds.</em>
+
+<p>---</p>
+
+<h2>Table of Contents</h2>
+
+<p>1. <a href="#introduction" target="_blank">Introduction: Team Quality Compounds</a></p> 2. <a href="#hiring-framework" target="_blank">The Hiring Framework: Who Actually Matters</a> 3. <a href="#interview-process" target="_blank">The Interview Process: Predicting Performance</a> 4. <a href="#onboarding" target="_blank">Onboarding: First 90 Days</a> 5. <a href="#performance-management" target="_blank">Feedback and Performance Management</a> 6. <a href="#firing-framework" target="_blank">The Firing Framework: When to Cut</a> 7. <a href="#culture-architecture" target="_blank">Culture Architecture: What Actually Sticks</a> 8. <a href="#case-studies" target="_blank">Case Studies: Real Team Transformations</a> 9. <a href="#implementation" target="_blank">Implementation: Building Your System</a>
+
+<p>---</p>
+
+<h2>Introduction: Team Quality Compounds {#introduction}</h2>
+
+<p>There's a hiring fallacy in startup culture: "We'll get the best people cheap early, then replace them later when we have budget."</p>
+
+<p>This is one of the most expensive mistakes you can make.</p>
+
+<strong>Here's why:</strong> A mediocre hire doesn't cost you 1x salary. They cost you:
+<ul><li>The time you spend managing them (5-10% of your week for 1-2 years)</li>
+<li>The decisions they make wrong (cascading downstream)</li>
+<li>The top talent they drive away (great people don't want to work with mediocrity)</li>
+<li>The opportunity cost (if they'd taken 80% effort, a better hire would take 20%)</li>
+</ul>
+<p>A single bad senior hire at a 20-person company can cost you $500K+ and 6 months of momentum.</p>
+
+<p>Conversely: <strong>Team composition is the single highest-leverage decision you make as a leader.</strong></p>
+
+<p>A team of 10 strong operators can out-execute a team of 30 average ones. Speed, decision quality, and execution all improve.</p>
+
+<h3>What This Module Covers</h3>
+
+<p>1. <strong>Who to hire</strong> - The framework for identifying people who move your needle</p> 2. <strong>How to hire them</strong> - The interview and assessment process that predicts performance 3. <strong>How to onboard them</strong> - The first 90 days that determine success 4. <strong>How to manage them</strong> - Feedback systems that drive performance 5. <strong>When to fire them</strong> - The hard decision that separates good leaders from great ones 6. <strong>How to build culture</strong> - Not as an afterthought, but as a strategic system
+
+<p>---</p>
+
+<h2>The Hiring Framework: Who Actually Matters {#hiring-framework}</h2>
+
+<p>Not all roles are equal. Some people will move the needle massively. Others will be solid contributors.</p>
+
+<p>The mistake leaders make: <strong>Treating all hiring decisions with equal rigor.</strong></p>
+
+<p>You should spend 10x more time hiring for roles that have 10x more impact. But most leaders do the opposite—they hire fast for critical roles and over-hire for support roles.</p>
+
+<h3>The Impact Tier Framework</h3>
+
+<strong>Original Framework: Identify Which Roles Drive Your Business</strong>
+
+<p>Categorize every open role into three tiers:</p>
+
+<strong>Tier 1: Multiplier Roles</strong> (1-2 per 10-person company)
+<ul><li>Your CTO, VP Sales, Operations lead</li>
+<li>These people shape how your entire company operates</li>
+<li>A great hire accelerates you 18+ months</li>
+<li>A bad hire sets you back 12+ months</li>
+<li><strong>Hiring criteria:</strong> 90th+ percentile, deep domain expertise, values alignment</li>
+</ul>
+<strong>Tier 2: Core Contributor Roles</strong> (4-5 per 10-person company)
+<ul><li>Engineers, customer success, product managers</li>
+<li>These roles execute the strategy</li>
+<li>A great hire increases output 25-40%</li>
+<li>A bad hire creates friction and rework</li>
+<li><strong>Hiring criteria:</strong> 75th+ percentile, core competencies strong, learning mindset</li>
+</ul>
+<strong>Tier 3: Support Roles</strong> (3-4 per 10-person company)
+<ul><li>Administrative, junior roles, contractors</li>
+<li>These roles enable others</li>
+<li>A great hire frees up 10-15 hours/week of senior time</li>
+<li>A bad hire causes minor friction</li>
+<li><strong>Hiring criteria:</strong> 50th+ percentile, coachable, reliable</li>
+</ul>
+<h3>The Hiring Matrix: What to Look For</h3>
+
+<p>For each tier, you're evaluating on three dimensions:</p>
+
+<strong>Dimension 1: Domain Expertise</strong>
+<ul><li>For Tier 1: Deep, 10+ year expertise required</li>
+<li>For Tier 2: Solid, 3-5 year experience required</li>
+<li>For Tier 3: Competence with willingness to learn</li>
+</ul>
+<strong>Dimension 2: Problem-Solving Ability</strong>
+<ul><li>Can they figure things out under uncertainty?</li>
+<li>Have they shipped products/solved hard problems before?</li>
+<li>Do they ask good questions?</li>
+</ul>
+<strong>Dimension 3: Values Alignment</strong>
+<ul><li>Do they care about the same outcomes?</li>
+<li>Can they operate with your level of autonomy/accountability?</li>
+<li>Do they have integrity?</li>
+</ul>
+<h3>Identifying Great Hires in Your Network</h3>
+
+<p>The best hires are often already known to you or your team.</p>
+
+<strong>Where to look:</strong>
+
+<p>1. <strong>Past colleagues</strong> - People you've worked with before reduce hiring risk by 70%</p> 2. <strong>Referrals from strong employees</strong> - Great people hire great people 3. <strong>Industry figures</strong> - People with a track record in your space 4. <strong>Adjacent expertise</strong> - Strong operators who can learn your domain
+
+<strong>The conversation starter:</strong>
+<p>"I'm not recruiting you right now, but if you ever wanted to explore [type of role] with [company description], I'd love to talk. Here's why I think you'd be great: [specific reason]."</p>
+
+<p>Then stay in touch. When you have a role open, they're your first call.</p>
+
+<h3>Red Flags to Avoid</h3>
+
+<strong>Professional red flags:</strong>
+<ul><li>Can't articulate what they've actually built/shipped</li>
+<li>Focuses on titles and compensation, not impact</li>
+<li>Blames past employers (never takes ownership)</li>
+<li>Vague about why they're leaving (if they won't tell you, they won't tell clients)</li>
+</ul>
+<strong>Interview red flags:</strong>
+<ul><li>Doesn't ask you questions about the role/company</li>
+<li>Can't explain their reasoning</li>
+<li>Speaks negatively about current/past teams</li>
+<li>Gives rehearsed answers to everything</li>
+</ul>
+<strong>Reference check red flags:</strong>
+<ul><li>References can't articulate specific examples</li>
+<li>Different story than the candidate told</li>
+<li>References aren't senior enough to know their work</li>
+<li>They won't provide references (immediate disqualify)</li>
+</ul>
+<h3>Template: Impact Tier Assessment</h3>
+
+<p>{{CODE<em>BLOCK</em>0}}</p>
+
+<p>---</p>
+
+<h2>The Interview Process: Predicting Performance {#interview-process}</h2>
+
+<p>Most interviews are terrible at predicting performance.</p>
+
+<p>Studies show that traditional interviews (resume review + 1-2 conversations) predict job performance about 7% better than random chance.</p>
+
+<p>The problem: <strong>Interviews reward confidence and communication, not competence and delivery.</strong></p>
+
+<p>Here's the process that actually works:</p>
+
+<h3>The 4-Round Interview Framework</h3>
+
+<strong>Round 1: Credential Check (30 minutes)</strong>
+<ul><li>Does their resume match what they claim?</li>
+<li>Have they shipped things in this domain?</li>
+<li>Are they a culture fit in terms of communication/professionalism?</li>
+<li>Can they articulate why they're interested?</li>
+</ul>
+<strong>Screening interview usually done by:</strong> Hiring manager or senior IC
+
+<strong>Key question:</strong> "Walk me through a project you shipped. What was your role? What went wrong? How did you handle it?"
+
+<strong>Round 2: Technical/Domain Deep Dive (60 minutes)</strong>
+<ul><li>Can they solve problems in your domain?</li>
+<li>How do they think?</li>
+<li>Do they ask good questions or make assumptions?</li>
+</ul>
+<p>For engineers: Coding problem or system design</p> For sales: Roleplay a difficult customer conversation For product: Walk through how they'd approach a specific problem For operations: How would you solve this operational challenge?
+
+<strong>Assessment:</strong> Can they do the job at 70%+ capability from day 1?
+
+<strong>Round 3: Judgment & Reasoning (60 minutes)</strong>
+<ul><li>How do they make decisions under uncertainty?</li>
+<li>Can they communicate complex ideas clearly?</li>
+<li>Do they take feedback well?</li>
+<li>Can they explain their thinking, not just answers?</li>
+</ul>
+<strong>Key questions:</strong>
+<ul><li>"Tell me about a decision you made that you later regretted. What did you learn?"</li>
+<li>"Describe a time you disagreed with your manager. How did you handle it?"</li>
+<li>"What's a failure you had? How did you respond?"</li>
+</ul>
+<strong>Assessment:</strong> Do they have judgment? Do they learn? Can we work together?
+
+<strong>Round 4: Values & Peer Assessment (30-45 minutes)</strong>
+<ul><li>Will they fit with the team?</li>
+<li>Do they care about the right things?</li>
+<li>Will they make the team better or drag it down?</li>
+</ul>
+<p>Usually with 1-2 peer-level team members (not the hiring manager).</p>
+
+<strong>Key observation:</strong> How do they interact with people not evaluating them?
+
+<h3>Phone Screening (Don't Skip This)</h3>
+
+<p>Before committing to 4 interviews, do a 15-minute phone screen:</p>
+
+<p>1. "Why are you interested in this role?"</p> 2. "What's your background in this area?" 3. "What would you need from a new role to be excited?" 4. Explain the role and company briefly 5. "Does this sound like something you'd want to learn more about?"
+
+<p>This filters out 40-50% of candidates quickly and respectfully.</p>
+
+<h3>The Reference Check That Actually Works</h3>
+
+<p>Most people run useless reference checks. Here's how to do it:</p>
+
+<strong>Before calling:</strong>
+<p>1. Ask the candidate: "Who knows your work best? I'll call them."</p> 2. Tell them you'll call [specific person] on [specific day]
+
+<strong>The call:</strong>
+<p>1. "I'm considering [candidate] for [role]. You know their work well. I want to be direct: Would you hire them again?"</p> 2. Listen to the pause and the answer 3. If yes: "What would you say they're best at?" 4. If no or hesitation: "Tell me more about why" 5. "What should I watch out for? What are they still learning?" 6. "On a scale of 1-10, how strong a performer are they?" 7. "Would you work with them again?"
+
+<p>The person who gives a 7/10 with equivocation is a risk. The person who gives a 9/10 with specific examples is solid.</p>
+
+<h3>The Decision Matrix</h3>
+
+<p>After all interviews, score on three dimensions:</p>
+
+<p>| Candidate | Competence | Judgment | Values | Final |</p> |-----------|-----------|----------|--------|-------| | A | 8/10 | 7/10 | 9/10 | 8/10 | | B | 9/10 | 6/10 | 5/10 | 6.5/10 | | C | 7/10 | 8/10 | 8/10 | 7.7/10 |
+
+<strong>Your bar:</strong> You need 7+/10 on competence, 7+/10 on judgment, and 7+/10 on values for any hire.
+
+<p>If someone scores 6/10 on values, they're not hiring. The math is that they'll create friction that outweighs their capability.</p>
+
+<h3>Template: Interview Scorecard</h3>
+
+<p>{{CODE<em>BLOCK</em>1}}</p>
+
+<p>---</p>
+
+<h2>Onboarding: First 90 Days {#onboarding}</h2>
+
+<p>Hiring is the easy part. <strong>Onboarding is where you make the hire successful or set them up to fail.</strong></p>
+
+<p>A bad onboarding turns a great hire into a frustrated departure. A good onboarding accelerates someone to full productivity in 6-8 weeks instead of 4-6 months.</p>
+
+<h3>The 30-60-90 Framework</h3>
+
+<strong>Days 1-30: Learn the System</strong>
+<ul><li>Get them access to everything they need (accounts, systems, intro meetings)</li>
+<li>Teach them how your company actually works (not how it's supposed to work)</li>
+<li>Give them one small, winnable project to build confidence</li>
+<li>Weekly 1:1s to unblock and understand their mental model</li>
+</ul>
+<strong>Expected output:</strong> Understands the role, has shipped one thing, is comfortable asking questions
+
+<strong>Days 31-60: Execute with Support</strong>
+<ul><li>Take on 2-3 medium projects with guidance</li>
+<li>Start participating in team decisions (but not owning yet)</li>
+<li>Begin to see patterns and suggest improvements</li>
+<li>Deeper relationship with team members</li>
+</ul>
+<strong>Expected output:</strong> Can execute projects with coaching, beginning to understand team dynamics
+
+<strong>Days 61-90: Own Their Area</strong>
+<ul><li>Fully owns their core responsibility</li>
+<li>Makes decisions without checking in constantly</li>
+<li>Identifies and proposes improvements</li>
+<li>Integrated into the team</li>
+</ul>
+<strong>Expected output:</strong> Fully ramped, performing at 80%+ of their potential
+
+<h3>The Day-1 Checklist</h3>
+
+<p>This matters more than you think. A person who gets to their desk on day 1 and sits for 2 hours waiting is already demoralized.</p>
+
+<p>{{CODE<em>BLOCK</em>2}}</p>
+
+<h3>The 30-Day Check-In</h3>
+
+<p>After 30 days, sit down and assess:</p>
+
+<strong>The 4 questions:</strong>
+<p>1. "How are you feeling about the role and company?"</p> 2. "What's been clear? What's confusing?" 3. "Where do you need more support?" 4. "Are you on track for 60-day goals?"
+
+<strong>What you're looking for:</strong>
+<ul><li>Honest answers (not just "great!")</li>
+<li>Specific examples (not vague feedback)</li>
+<li>Confidence growing (or concern if dropping)</li>
+<li>Self-awareness about what they don't know</li>
+</ul>
+<strong>Red flag:</strong> If someone is defensive, vague, or over-inflating their progress, investigate.
+
+<h3>The 90-Day Decision</h3>
+
+<p>At 90 days, you make a decision:</p>
+
+<p>1. <strong>Full commitment:</strong> Ramped, performing, good cultural fit. You're confident.</p> 2. <strong>Continue with focus:</strong> Progressing, but needs specific improvements. Set 120-day milestones. 3. <strong>Part ways:</strong> Not working out. It's better for both of you to separate now.
+
+<strong>This is critical:</strong> If you're not confident at 90 days, firing gets exponentially harder at 180 days and 365 days.
+
+<h3>Template: Onboarding Plan</h3>
+
+<p>{{CODE<em>BLOCK</em>3}}</p>
+
+<p>---</p>
+
+<h2>Feedback and Performance Management {#performance-management}</h2>
+
+<p>Most managers avoid feedback. They give it once a year in a formal review that surprises nobody and changes nothing.</p>
+
+<p>This is cowardly and ineffective.</p>
+
+<strong>Real feedback happens constantly, in context, with specific examples.</strong>
+
+<h3>The Feedback Framework</h3>
+
+<strong>Frequency:</strong> Weekly 1:1s (not monthly, not annual)
+<strong>Structure:</strong> Start with listening, then feedback
+<strong>Specificity:</strong> Always give examples, never generalize
+<strong>Immediacy:</strong> Within 24 hours of the event
+<strong>Balance:</strong> 3x positive feedback for every piece of constructive feedback
+
+<h3>The Weekly 1:1 Template</h3>
+
+<strong>15-30 minutes, same time every week</strong>
+
+<p>Structure:</p> 1. "How are you?" (2 minutes) 2. "What did you accomplish this week?" (3 minutes) 3. "What's in your way?" (3 minutes) 4. "Here's what I observed..." [Feedback] (2-3 minutes) 5. "What do you need from me?" (2 minutes)
+
+<strong>The feedback part matters:</strong>
+
+<strong>Good feedback:</strong> "In yesterday's customer call, you interrupted the client twice. They seemed frustrated and stopped sharing their actual need. Next time, listen for a full 60 seconds before responding."
+
+<strong>Bad feedback:</strong> "You need to listen more in calls." (Vague, not actionable)
+
+<h3>The Quarterly Review</h3>
+
+<p>Every quarter (or 90 days), do a deeper review:</p>
+
+<strong>Structure:</strong>
+<p>1. Self-assessment: "How do you think you're performing?"</p> 2. Your assessment: "Here's what I see..." 3. Growth areas: "Here's where I think you can level up..." 4. Career goals: "Where do you want to go?" 5. Next quarter: "Here's what success looks like..."
+
+<strong>The conversation:</strong>
+<ul><li>Should take 60 minutes</li>
+<li>Should feel like working together toward their success, not judgment</li>
+<li>Should be clear about expectations</li>
+<li>Should identify specific growth opportunities</li>
+</ul>
+<h3>How to Give Critical Feedback</h3>
+
+<p>Feedback about underperformance is where most managers fail.</p>
+
+<strong>The structure:</strong>
+
+<p>1. <strong>Setup:</strong> "I want to give you some feedback because I believe in your potential."</p> 2. <strong>Situation:</strong> Specific example (date, situation, what happened) 3. <strong>Impact:</strong> "Here's how that affected the team/project..." 4. <strong>Standard:</strong> "Here's what I expect instead..." 5. <strong>Support:</strong> "Here's how I can help you improve..." 6. <strong>Expectation:</strong> "Here's how we'll measure improvement..."
+
+<strong>Example:</strong>
+<p>"I want to give you feedback. In the standup on Tuesday, you said the feature would be done Thursday. Friday came, and it wasn't done, and you hadn't communicated the delay. This put the release at risk. I need you to update me the moment a timeline is at risk. Going forward, if you're not confident about a deadline, tell me 24 hours early, not on delivery day. How can I support you in getting better at this?"</p>
+
+<h3>Performance Improvement Plans (PIPs)</h3>
+
+<p>A PIP is not a punishment. It's a clear, documented path to either improvement or departure.</p>
+
+<strong>When to use:</strong>
+<ul><li>Someone has been given feedback multiple times</li>
+<li>Their performance is below acceptable</li>
+<li>You want to give them a clear chance to improve</li>
+<li>You're willing to invest time helping them improve, OR you're prepared to fire them</li>
+</ul>
+<strong>Structure (30 days):</strong>
+<p>1. Clear statement of current performance gap</p> 2. Specific, measurable improvement targets 3. Support/coaching you'll provide 4. Clear consequences (meet targets = back to normal, miss targets = likely departure) 5. Weekly check-ins
+
+<strong>Example PIP:</strong>
+<p>"Sarah, I want to be direct about what I'm seeing. Over the last three months:</p>
+<ul><li>You've missed three deployment deadlines</li>
+<li>Code quality has dropped (5+ bugs in last month)</li>
+<li>You seem disengaged in standups</li>
+</ul>
+<p>I believe you're capable of better. Here's what I need to see in the next 30 days:</p>
+<ul><li>Zero missed deadlines</li>
+<li>Code quality returns to baseline (1 bug or fewer per month)</li>
+<li>Active participation in team meetings</li>
+</ul>
+<p>I'm going to give you support. We'll do 2x weekly 1:1s, and I'll help you prioritize. If you hit these targets, this is over and we move forward. If not, we'll need to part ways. Are you in?"</p>
+
+<p>---</p>
+
+<h2>The Firing Framework: When to Cut {#firing-framework}</h2>
+
+<strong>Most leaders wait 2-3x too long to fire someone.</strong>
+
+<p>A person who is underperforming at 6 months usually doesn't improve to adequate at 12 months. They either improve by month 4, or they're likely gone.</p>
+
+<p>Keeping someone who isn't working:</p>
+<ul><li>Hurts the team's morale (great people don't want to carry someone)</li>
+<li>Distorts your sense of standards (you become okay with mediocrity)</li>
+<li>Wastes their time (better they find a role where they can succeed)</li>
+<li>Costs you momentum and money</li>
+</ul>
+<h3>Red Flags That Someone Needs to Go</h3>
+
+<strong>Performance red flags:</strong>
+<ul><li>Consistently missing deadlines after feedback</li>
+<li>Quality of work declining over time</li>
+<li>Not learning despite coaching</li>
+<li>Avoiding difficult work (cherry-picking easy tasks)</li>
+</ul>
+<strong>Behavioral red flags:</strong>
+<ul><li>Spreading negativity or complaints</li>
+<li>Going around you on decisions instead of bringing to you</li>
+<li>Not taking feedback (defensive, makes excuses)</li>
+<li>Undermining team decisions</li>
+</ul>
+<strong>Culture red flags:</strong>
+<ul><li>Making others feel uncomfortable</li>
+<li>Not aligning with core values</li>
+<li>Resistant to feedback or change</li>
+<li>Blaming others instead of taking responsibility</li>
+</ul>
+<strong>The key test:</strong> If this person quit tomorrow, would you feel relief or concern?
+
+<p>If relief, they need to go.</p>
+
+<h3>The Firing Decision Process</h3>
+
+<strong>Step 1: You must be certain (Week 1-2)</strong>
+<ul><li>Have you given specific, documented feedback?</li>
+<li>Have they had a fair chance to improve?</li>
+<li>Have you cleared this with your advisor/board?</li>
+<li>Do you understand legal implications (documentation)?</li>
+</ul>
+<strong>Step 2: Prepare (Day before firing)</strong>
+<ul><li>Schedule a meeting for early morning (Monday, Wednesday, or Thursday—gives them weekend to process)</li>
+<li>Have HR or legal present if required</li>
+<li>Have documentation ready</li>
+<li>Know what severance you're offering</li>
+<li>Have their final paycheck ready</li>
+<li>Have an email drafted for team announcement</li>
+</ul>
+<strong>Step 3: The conversation (30 minutes)</strong>
+<ul><li>Private room, no distractions</li>
+<li>Direct and clear: "This isn't working out. We've decided to let you go effective today."</li>
+<li>Keep it brief (don't over-explain or debate)</li>
+<li>Here's your severance package</li>
+<li>Here's your process for offboarding</li>
+<li>Here's when security access ends</li>
+<li>Don't be harsh, but be final</li>
+</ul>
+<strong>Step 4: Immediate after (1-2 hours)</strong>
+<ul><li>Remove their access to systems</li>
+<li>Announce to team immediately (don't let rumors start)</li>
+<li>Simple statement: "[Name] has left the company. We'll work as a team to cover responsibilities. Here's the plan..."</li>
+<li>Don't badmouth or over-explain</li>
+<li>Answer questions: "What happened? Who covers their work?"</li>
+</ul>
+<h3>How to Announce a Departure</h3>
+
+<strong>Bad:</strong> "We're restructuring. John is part of those changes."
+<strong>Good:</strong> "John has decided to pursue other opportunities. We're grateful for his contributions. Here's how we're covering his responsibilities."
+
+<p>Notice: You're not explaining details or badmouthing. You're moving forward.</p>
+
+<h3>Template: Firing Checklist</h3>
+
+<p>{{CODE<em>BLOCK</em>4}}</p>
+
+<p>---</p>
+
+<h2>Culture Architecture: What Actually Sticks {#culture-architecture}</h2>
+
+<p>"Culture" is the most misunderstood word in business. Most companies think it means:</p>
+<ul><li>Nice office</li>
+<li>Free snacks</li>
+<li>Team building events</li>
+<li>Slack emoji reactions</li>
+</ul>
+<strong>Real culture is:</strong> The set of norms and behaviors that determine how decisions get made and work gets done when no one is watching.
+
+<p>You can't create culture with posters. You create it through systems.</p>
+
+<h3>The Culture Pillars Framework</h3>
+
+<strong>Original Framework: Three Pillars That Drive Behavior</strong>
+
+<p>Most long-lasting culture comes from three things:</p>
+
+<strong>Pillar 1: How You Hire</strong>
+<ul><li>If you hire for competence but not values, your team will be smart but cutthroat</li>
+<li>If you hire for values but not competence, your team will be nice but ineffective</li>
+<li>The people you hire teach the next cohort what's acceptable</li>
+</ul>
+<strong>Pillar 2: Who You Promote</strong>
+<ul><li>The person you promote to manager signals what behavior is rewarded</li>
+<li>If you promote the smartest asshole, you've just said "competence matters more than collaboration"</li>
+<li>If you promote the nice mediocre person, you've said "fitting in matters more than results"</li>
+</ul>
+<p>The message: <strong>You can't hire for values and then promote people who violate them.</strong></p>
+
+<strong>Pillar 3: Who You Fire</strong>
+<ul><li>Firing is your most powerful culture signal</li>
+<li>When you fire someone for violating values, you've said "We mean this"</li>
+<li>When you keep someone who violates values but is productive, you've said "Values don't matter"</li>
+</ul>
+<h3>The Core Values Exercise</h3>
+
+<p>Most companies have meaningless values (Integrity, Excellence, Innovation). Everyone claims to believe these.</p>
+
+<strong>Real values are specific and create trade-offs.</strong>
+
+<p>Example core values:</p>
+<ul><li><strong>"Speed over perfection"</strong> - We'd rather ship a 7/10 solution in a week than a 9/10 in a month</li>
+<li><strong>"Radical transparency"</strong> - We share information widely, even if it's uncomfortable</li>
+<li><strong>"Customer obsession"</strong> - We prioritize customer needs over internal convenience</li>
+<li><strong>"Ownership mindset"</strong> - We solve problems we see; we don't wait to be told</li>
+</ul>
+<p>For each value, ask:</p> 1. What does this mean in practice? 2. What's an example of living this? 3. What's an example of violating this? 4. How do we reinforce this?
+
+<h3>Living the Values: Systems That Matter</h3>
+
+<strong>Values in action:</strong>
+
+<strong>System 1: Decision-making</strong>
+<p>How do your team make decisions? Together? Through consensus? By authority?</p>
+<ul><li>If you say "ownership" but all decisions come through you, you're lying</li>
+<li>If you say "transparency" but information is hoarded, you're lying</li>
+</ul>
+<p>Design your decision-making to reinforce your values.</p>
+
+<strong>System 2: Communication</strong>
+<p>What's the norm for communication? Formal? Informal? Synchronous? Asynchronous?</p>
+<ul><li>If you value speed and you require formal approval processes, you've contradicted yourself</li>
+</ul>
+<strong>System 3: Feedback and accountability</strong>
+<p>Do you give feedback publicly or privately? Do you hold people accountable equally?</p>
+<ul><li>If you give feedback to junior people but protect senior people, you're not serious about values</li>
+</ul>
+<strong>System 4: Reward and recognition</strong>
+<p>What gets praised in all-hands? What gets bonused? What gets promoted?</p>
+<ul><li>If you publicly praise collaboration but bonus individuals, you've contradicted yourself</li>
+</ul>
+<h3>The Culture Document</h3>
+
+<p>Your culture document is not a poster. It's a manual for how your company actually operates.</p>
+
+<strong>It should include:</strong>
+<p>1. Core values (2-4, specific, with examples)</p> 2. Decision-making norms (how are decisions made?) 3. Communication norms (sync/async, transparency rules) 4. Feedback culture (how do we give feedback?) 5. How we hire/fire (what we're looking for, what gets you out) 6. How we work (remote, office, hybrid? hours? meetings?) 7. How we learn (training, development, time off for learning)
+
+<strong>This should be 5-10 pages, not a mission statement.</strong>
+
+<h3>Template: Culture Pillars</h3>
+
+<p>{{CODE<em>BLOCK</em>5}}</p>
+
+<p>---</p>
+
+<h2>Case Studies: Real Team Transformations {#case-studies}</h2>
+
+<h3>Case Study 1: From Chaos to Clarity</h3>
+
+<strong>Company:</strong> B2B SaaS startup, $2M ARR, 15 employees
+
+<strong>The Problem:</strong>
+<p>The company was growing but chaotic. Turnover was 40% annually. People complained about:</p>
+<ul><li>Unclear expectations</li>
+<li>No feedback (feedback was annual and shocking)</li>
+<li>Favorites (some people could miss deadlines, others were held accountable)</li>
+<li>No clear path for growth</li>
+</ul>
+<p>The CEO felt like firefighting constantly.</p>
+
+<strong>The Diagnosis:</strong>
+<p>Using the framework above, they realized:</p> 1. No clear values beyond "be awesome" 2. Hiring was fast and loose (1 interview) 3. Promotion decisions seemed random 4. Feedback was rare and harsh 5. Firing was arbitrary
+
+<strong>The Transformation (6 months):</strong>
+
+<strong>Month 1:</strong> Define real values through team workshops
+<ul><li>"Speed > Perfection" - Ship fast, iterate</li>
+<li>"Radical Candor" - Feedback, early and often</li>
+<li>"Ownership" - Own your outcomes, solve your problems</li>
+</ul>
+<strong>Month 2:</strong> Implement hiring rigor
+<ul><li>4-interview process (instead of 1)</li>
+<li>Reference checks with detailed rubric</li>
+<li>Values alignment part of interview</li>
+</ul>
+<strong>Month 3:</strong> Install weekly 1:1s and quarterly reviews
+<ul><li>Every manager trained on giving feedback</li>
+<li>Feedback template and consistency</li>
+<li>Quarterly goal-setting</li>
+</ul>
+<strong>Month 4:</strong> Make two hard firing decisions
+<ul><li>One person who was smart but undermined collaboration</li>
+<li>One person who had attitude problems</li>
+<li>Announced to team with clarity: "These don't fit our values"</li>
+</ul>
+<strong>Month 5:</strong> Promotion that signals values
+<ul><li>Promoted a mid-level person who embodied values, not the smartest person</li>
+<li>Public acknowledgment of why</li>
+</ul>
+<strong>Month 6:</strong> Refresh and operationalize
+<ul><li>Culture documentation</li>
+<li>Onboarding explicitly teaches values</li>
+<li>Monthly all-hands highlights value-driven behavior</li>
+</ul>
+<strong>The Result:</strong>
+<ul><li>Turnover dropped from 40% to 12%</li>
+<li>Hiring time increased (4 weeks instead of 1 week), quality improved 10x</li>
+<li>Employee satisfaction increased 5 points on NPS</li>
+<li>Revenue growth accelerated (better team execution)</li>
+</ul>
+<strong>Key insight:</strong> Culture isn't nice-to-have. It's the operating system of your company.
+
+<h3>Case Study 2: Scaling Without Losing Quality</h3>
+
+<strong>Company:</strong> Engineering consulting firm, $8M revenue, 60 employees, adding 15/year
+
+<strong>The Problem:</strong>
+<p>As the company grew, quality dropped. Clients were complaining. New people weren't integrating well. Old-timers were frustrated with "the way things have become."</p>
+
+<p>The leadership team realized: <strong>They were hiring fast without changing their hiring bar or onboarding.</strong></p>
+
+<strong>The Solution:</strong>
+
+<strong>Week 1:</strong> Assess hiring bar
+<ul><li>Current: "Can they do the technical work?" (Yes/No)</li>
+<li>New: "Can they work with our team? Do they learn? Do they care about quality?"</li>
+<li>Added reference calls focused on collaboration and values</li>
+</ul>
+<strong>Week 2-4:</strong> Redesign onboarding
+<ul><li>New hire buddy system (peer mentoring)</li>
+<li>First month focused on learning culture, not production</li>
+<li>Team presentations by new hires (forced integration)</li>
+<li>Explicit teaching of standards (quality, communication, collaboration)</li>
+</ul>
+<strong>Week 5-8:</strong> Manager training
+<ul><li>Every manager (now 4-5 people) trained on feedback</li>
+<li>Weekly team meetings to share learning and challenges</li>
+<li>Monthly one-on-ones vs. annual reviews</li>
+</ul>
+<strong>Ongoing:</strong> Culture artifacts
+<ul><li>"Quality principles" document</li>
+<li>Public acknowledgment of great work</li>
+<li>Monthly all-hands that celebrate quality/values</li>
+</ul>
+<strong>Result:</strong>
+<ul><li>Hiring cycle time increased 30% (worth it)</li>
+<li>Onboarding time extended from 1 month to 3 months (people ramped faster)</li>
+<li>Client satisfaction improved</li>
+<li>Turnover of new hires dropped from 35% in year 1 to 8% by year 2</li>
+<li>Revenue per employee increased (better retention = more institutional knowledge)</li>
+</ul>
+<strong>Key insight:</strong> As you grow, you can't hire fast without also planning to onboard right.
+
+<p>---</p>
+
+<h2>Implementation: Building Your System {#implementation}</h2>
+
+<h3>This Week: Assess Your Current State</h3>
+
+<strong>Questions to answer:</strong>
+<p>1. How long does it take to hire someone? (From opening to offer acceptance)</p> 2. What's your average onboarding timeline to full productivity? 3. How often do you give feedback to your direct reports? 4. When was the last performance conversation you had? (Not a review, an actual conversation) 5. How many people have you fired in the last 2 years? (Ratio to team size) 6. If you wrote down your actual values, what would they be? (Not your stated values)
+
+<h3>Next Week: Implement One System</h3>
+
+<p>Pick one area from this module and implement:</p>
+
+<strong>Option A: Hiring</strong>
+<ul><li>Redesign your interview process to 4 rounds</li>
+<li>Create interview scorecards</li>
+<li>Set a hiring bar (8+/10 minimum)</li>
+</ul>
+<strong>Option B: Onboarding</strong>
+<ul><li>Create a 30-60-90 plan</li>
+<li>Design a day-1 checklist</li>
+<li>Schedule a 30-day check-in</li>
+</ul>
+<strong>Option C: Feedback</strong>
+<ul><li>Schedule weekly 1:1s (if not already)</li>
+<li>Create a feedback template</li>
+<li>Give one piece of specific, positive feedback this week</li>
+</ul>
+<strong>Option D: Values</strong>
+<ul><li>Write down what you actually believe</li>
+<li>Share with your team and refine</li>
+<li>Identify one hiring or firing decision this affects</li>
+</ul>
+<h3>Month 1: Build the Full System</h3>
+
+<ul><li>Hiring: 4-round process, scorecards, reference checks</li>
+<li>Onboarding: 30-60-90 plans, day-1 checklist, check-ins at 30/60/90</li>
+<li>Feedback: Weekly 1:1s, quarterly reviews, feedback template</li>
+<li>Culture: Document your actual values, decision-making, communication norms</li>
+</ul>
+<h3>Templates for Quick Implementation</h3>
+
+<strong>Manager Weekly 1:1 Template</strong>
+<p>{{CODE<em>BLOCK</em>6}}</p>
+
+<strong>Quarterly Review Template</strong>
+<p>{{CODE<em>BLOCK</em>7}}</p>
+
+<strong>New Values Declaration</strong>
+<p>{{CODE<em>BLOCK</em>8}}</p>
+
+<p>---</p>
+
+<h2>Conclusion {#conclusion}</h2>
+
+<strong>Team quality compounds.</strong>
+
+<p>The difference between a company that scales to $10M and one that gets stuck at $2M is usually not the product. It's the team.</p>
+
+<p>The operators who build exceptional teams:</p> 1. Hire ruthlessly (right bar, right process, values alignment) 2. Onboard systematically (first 90 days determine everything) 3. Give feedback constantly (weekly, specific, balanced) 4. Make hard firing decisions (quickly, cleanly) 5. Build culture through systems (not posters, actual systems)
+
+<p>Do these five things consistently, and your team will compound. You'll move faster, make better decisions, and attract better people.</p>
+
+<p>Skip these, and you'll spend your time managing underperformance instead of building something great.</p>
+
+<h3>Your 30-Day Action Plan</h3>
+
+<strong>Week 1:</strong> Assess current hiring/onboarding/feedback systems
+<strong>Week 2:</strong> Pick one system to improve
+<strong>Week 3:</strong> Implement that system with your team
+<strong>Week 4:</strong> Review and adjust
+
+<p>Your team is your greatest competitive advantage. Build it intentionally.</p>
+
+<p>---</p>
+
+<strong>End of Module</strong>
+
+<em>Next module: Systems Thinking for Operators</em>
+
+    </div>
+</body>
+</html>
